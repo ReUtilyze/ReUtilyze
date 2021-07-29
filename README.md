@@ -40,7 +40,7 @@
 <p>The way forward for consumers could be the 4 R method of reuse, repair, recycle, and research.</p>
 <p>India is the only country in Southern Asia with e-waste legislation, with laws to manage e-waste in place since 2011, mandating that only authorized dismantlers and recyclers collect e-waste. There are now 312 authorized recyclers in the country. <a href="https://india.mongabay.com/2020/08/explainer-the-why-and-how-of-disposing-electronic-waste/"> Electronic waste: the need to reuse, repair, recycle and safely dispose (mongabay.com)</a></p>
 <p>ReUtilyze will help minimize the impact of electronic waste on the environment during the life span of the product and also when it becomes obsolete.</p>
-<p><a target="_blank" rel="noopener noreferrer" href="‪F:\CFC_Pics\image-20210729-041414.png"><img width="80%" src="‪F:\CFC_Pics\image-20210729-041414.png" alt="About screen" title="About screen" style="max-width:100%;"></a></p>
+ 
  
  
 
