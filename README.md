@@ -20,13 +20,12 @@ Recycling is vital as it reduces the need to harvest new raw materials, prevents
 04. [Long Description](#Long-Description)
 05. [Solution Architecture](#Solution-Architecture)
 06. [Tech Stack Details](#Tech-Stack-Details)
-7. [Innovation/Competition](#Innovation)
-8. [Project Roadmap](#Project-Roadmap)
-9. [Getting Started](#Getting-Started)
+07. [Innovation/Competition](#Innovation)
+08. [Project Roadmap](#Project-Roadmap)
+09. [Getting Started](#Getting-Started)
 10. [IBM Cloud Services](#IBM-Cloud-Services)
-11. [Deployment/Pilot](#Pilot)
-12. [Authors](#Authors)
-13. [License](#License)
+11. [Authors](#Authors)
+12. [License](#License)
 
 ## Short Description <a name="Short-Description"></a>
 
@@ -84,64 +83,29 @@ ReUtilyze will help minimize the impact of electronic waste on the environment d
 #### Run it
 * Download the Github code
 * Install node.js
-* Install Ionic and Cordova
-* This app makes use of 18 plugins all of which are needed to be installed in order to compile the app or run on localhost
-     1. Photo Viewer Plugin <br /> (https://ionicframework.com/docs/native/photo-viewer)
-     2. Android Permission Management Plugin <br /> (https://ionicframework.com/docs/native/android-permissions)
-     3. AndroidX Plugin <br /> (https://ionicframework.com/docs/native/firebase-x)
-     4. AndroidX Adapter Plugin <br /> (Should automatically install when you install firebase plugin)
-     5. Camera Plugin <br /> (https://ionicframework.com/docs/native/camera)
-     6. Device Plugin <br /> (https://ionicframework.com/docs/native/device)
-     7. Firebase Cloud Messaging Plugin <br /> (https://ionicframework.com/docs/native/fcm)
-     8. File Plugin <br /> (https://ionicframework.com/docs/native/file)
-     9. File Manager Plugin <br /> (https://ionicframework.com/docs/native/file-transfer)
-    10. Full Screen Plugin <br /> (https://ionicframework.com/docs/native/android-full-screen) <br />
-            * Available only on Android for devices with notch/ not supported on iOS
-    11. Keyboard Plugin <br /> (https://ionicframework.com/docs/native/keyboard)
-    12. Webview Plugin <br /> (https://ionicframework.com/docs/native/ionic-webview)
-    13. Screen Orientation Plugin <br /> (https://ionicframework.com/docs/native/screen-orientation)
-    14. Splash Screen Plugin <br /> (https://ionicframework.com/docs/native/splash-screen)
-    15. Statusbar Plugin <br /> (https://ionicframework.com/docs/native/status-bar)
-    16. Vibration Plugin <br /> (https://ionicframework.com/docs/native/vibration)
-    17. Sql Lite Storage Plugin <br /> (https://ionicframework.com/docs/angular/storage)
-    18. Google Services Plugin <br /> (Will be automatically installed when installing Firebase)
+* Install Angular
+ 
 
-* Once the plugins are installed the platforms are needed to be added:
-    01. In order to add the Android Platform run the following command:<br />
-        <code>ionic cordova platform add android</code>
-    02. In order to add the iOS Platform run the following command:<br />
-        <code>ionic cordova platform add ios</code>
+ 
 
 * Running the app:
-    01. To run the app on a local node server:<br />
-        <code>ionic serve</code>
-    02. To run the app on an Android device:<br />
-        <code>ionic cordova run android --device</code>
-    03. To run the app on Android emulator:<br />
-        <code>ionic cordova run android</code>
+    01. To run the application on a local machine:<br />
+        Follow below steps :
+        
+        <code>npm install</code>
+        
+        <code>ng serve --o --ssl true</code>
+ 
 
 * Building packages:
     01. To build an Android package:<br />
         <code>ionic cordova build android</code>
 
 ## IBM Cloud Services <a name="IBM-Cloud-Services"></a>
-* [IBM Cloud Object Storage](https://www.ibm.com/cloud/object-storage)
-* [IBM Watson Studio](https://www.ibm.com/cloud/watson-studio)
-* [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/) 
-* [The Weather Company API](https://callforcode.weather.com/)   
-Check out ReUtilyze's website  repository database [click here](https://github.com/helentsai17/ReUtilyze) 
+  
+ 
 
-## Deployment/Pilot <a name="Pilot"></a>
-In order to create the APP, we did previous research with the farmers to identify their main concerns and needs. The mains focus areas that we found were the lack of access to rainfall and bank loans.
-We then started testing the APP features with a selected 15 farmers in the Mongolian householder farmers to identify any gaps in the user interface and improvements need in the APP.
-* Start Date: 01/June/2020
-* Region: Mongolia (Dornord Province)
-* Currently real users :[15 users]( https://github.com/ajinkyadatalkar1/ReUtilyze/blob/master/Pilot%20Mongolia%20Users.png)
-* Currently Situation: OnGoing. Collecting data.
-
-Check the firsts feedbacks from the field test done to the APP's user interface: 
-* [Feedback Director of the Alt Margad- Khentii province](https://www.youtube.com/watch?v=_mRERF0wa1Y).
-* [Feedback family farmer Sukhbaatar province](https://www.youtube.com/watch?v=SHfCFlWM-5c).
+ 
 
 ## Authors <a name="Authors"></a>
 * Ajinkya Datalkar - Product & Sotware Developer, System Design [*See Linkedin*](https://www.linkedin.com/in/ajinkya-datalkar/)
