@@ -1,0 +1,19 @@
+.py-3 {
+    padding-top: 0.3rem!important;
+    padding-bottom: 1rem!important;
+}
+
+.menus {
+
+    right: 0;
+left: auto;
+min-width: 16rem;
+background-color: #2f75bb;
+background-image: linear-gradient(#2f75bb,#1b62a8);
+border: none;
+max-height: 90vh;
+overflow: auto;
+font-size: 14px;
+text-transform: uppercase;
+
+}

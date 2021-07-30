@@ -1,0 +1,88 @@
+
+<div >
+    <div class="row w-60" >
+            <div class="col-md-2">
+                <div class="card border-warning mx-sm-1 p-0" >
+                    <a [routerLink]="['/claimlist', 'Submitted']"> 
+                    <div class="text-warning text-center mt-1">Pending Back office Approvals</div>
+                    <div class="text-warning text-center mt-1"><h1>{{boPendingCount}}</h1></div>
+                </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card border-warning mx-sm-1 p-0"  >
+                    <a [routerLink]="['/claimlist', 'Approved By BO']"> 
+                    <div class="text-warning text-center mt-1">Pending Vendor Approvals</div>
+                    <div class="text-warning text-center mt-1"><h1>{{vendorPendingCount}}</h1></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card border-success mx-sm-1 p-0">
+                    <a [routerLink]="['/claimlist', 'Approved By Vendor']"> 
+                    <div class="text-success text-center mt-1">Approved Requests Details</div>
+                    <div class="text-success text-center mt-1"><h1>{{TotalApproved}}</h1></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card border-danger mx-sm-1 p-0">
+                    <a [routerLink]="['/claimlist', 'Rejected By BO']">
+                    <div class="text-danger text-center mt-1">Rejected Requests By Back Office</div>
+                    <div class="text-danger text-center mt-1"><h1>{{TotalRejectedByBO}}</h1></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card border-danger mx-sm-1 p-0">
+                    <a [routerLink]="['/claimlist', 'Rejected By Vendor']">
+                    <div class="text-danger text-center mt-1">Rejected Requests By Vendor</div>
+                    <div class="text-danger text-center mt-1"><h1>{{TotalRejectedByVendor}}</h1></div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-md-2">
+                <div class="card border-primary mx-sm-1 p-0" >
+                    <a [routerLink]="['/claimlist', 'Total Requests']">
+                    <div class="text-primary text-center mt-1">Total Requests Details</div>
+                    <div class="text-primary text-center mt-1"><h1>{{TotalCount}}</h1></div>
+                    </a>
+                </div>
+            </div>
+         </div>
+    </div>
+ 
+    <div style="margin-top: 20px;"  >
+        <div class="row w-100">
+            <div class="col-md-6">
+    <div style="display: block;">
+        <canvas baseChart 
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          [plugins]="barChartPlugins"
+          [legend]="barChartLegend"
+          [colors]="chartColors"
+          [chartType]="barChartType">
+        </canvas>
+      </div>
+            </div>
+            <div class="col-md-6">
+            <div style="display: block;">
+                <canvas baseChart 
+                  [data]="pieChartData" 
+                  [labels]="pieChartLabels" 
+                  [chartType]="pieChartType"
+                  [options]="pieChartOptions"
+                  [plugins]="pieChartPlugins"
+                  [colors]="piechartColors"
+                  [legend]="pieChartLegend">
+                </canvas>
+              </div>
+</div>        
+            </div>
+    </div>
+      

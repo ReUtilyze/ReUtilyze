@@ -1,0 +1,114 @@
+{
+    "Defect": [
+        {
+            "Id": 1,
+            "DefectTitle": "Accessories",
+            "DefectDescriptionn": "Please select available accessories",
+            "DisplaySequence": 1,
+            "IsRequired": "No",
+            "IsMultiSelected": "Yes",
+            "IsActive": "Yes",
+            "BrandModelId": 1,
+            "BrandModel": "iPhone XS"
+        },
+        {
+            "Id": 2,
+            "DefectTitle": "Glass Defects",
+            "DefectDescriptionn": "Please select all applicable glass defects",
+            "DisplaySequence": 2,
+            "IsRequired": "Yes",
+            "IsMultiSelected": "No",
+            "IsActive": "Yes",
+            "BrandModelId": 1,
+            "BrandModel": "iPhone XS"
+        },
+        {
+            "Id": 3,
+            "DefectTitle": "Display Defects",
+            "DefectDescriptionn": "Please select all applicable display defects",
+            "DisplaySequence": 3,
+            "IsRequired": "Yes",
+            "IsMultiSelected": "No",
+            "IsActive": "Yes",
+            "BrandModelId": 1,
+            "BrandModel": "iPhone XS"
+        },
+        {
+            "Id": 4,
+            "DefectTitle": "Body Defects",
+            "DefectDescriptionn": "Please select all applicable body defects",
+            "DisplaySequence": 4,
+            "IsRequired": "Yes",
+            "IsMultiSelected": "No",
+            "IsActive": "Yes",
+            "BrandModelId": 1,
+            "BrandModel": "iPhone XS"
+        },
+        {
+            "Id": 5,
+            "DefectTitle": "Faults",
+            "DefectDescriptionn": "Please select all applicable functional fault(s)",
+            "DisplaySequence": 5,
+            "IsRequired": "No",
+            "IsMultiSelected": "Yes",
+            "IsActive": "Yes",
+            "BrandModelId": 1,
+            "BrandModel": "iPhone XS"
+        },
+        {
+            "Id": 6,
+            "DefectTitle": "Accessories",
+            "DefectDescriptionn": "Please select available accessories",
+            "DisplaySequence": 1,
+            "IsRequired": "No",
+            "IsMultiSelected": "Yes",
+            "IsActive": "Yes",
+            "BrandModelId": 2,
+            "BrandModel": "OnePlus 9"
+        },
+        {
+            "Id": 7,
+            "DefectTitle": "Glass Defects",
+            "DefectDescriptionn": "Please select all applicable glass defects",
+            "DisplaySequence": 2,
+            "IsRequired": "Yes",
+            "IsMultiSelected": "No",
+            "IsActive": "Yes",
+            "BrandModelId": 2,
+            "BrandModel": "OnePlus 9"
+        },
+        {
+            "Id": 8,
+            "DefectTitle": "Display Defects",
+            "DefectDescriptionn": "Please select all applicable display defects",
+            "DisplaySequence": 3,
+            "IsRequired": "Yes",
+            "IsMultiSelected": "No",
+            "IsActive": "Yes",
+            "BrandModelId": 2,
+            "BrandModel": "OnePlus 9"
+        },
+        {
+            "Id": 9,
+            "DefectTitle": "Body Defects",
+            "DefectDescriptionn": "Please select all applicable body defects",
+            "DisplaySequence": 4,
+            "IsRequired": "Yes",
+            "IsMultiSelected": "No",
+            "IsActive": "Yes",
+            "BrandModelId": 2,
+            "BrandModel": "OnePlus 9"
+        },
+        {
+            "Id": 10,
+            "DefectTitle": "Faults",
+            "DefectDescriptionn": "Please select all applicable functional fault(s)",
+            "DisplaySequence": 5,
+            "IsRequired": "No",
+            "IsMultiSelected": "Yes",
+            "IsActive": "Yes",
+            "BrandModelId": 1,
+            "BrandModel": "OnePlus 9"
+        }
+    ]
+}

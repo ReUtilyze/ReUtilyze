@@ -1,0 +1,330 @@
+<div class="page-header newRow">    
+    <div class="row">
+      <div class="col-md-10">
+        <h1 class="display-6"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">   Request Details </font></font></h1>
+      </div>
+      <div class="col-md-2">
+        <div class="d-grid gap-2 d-md-block">
+         <a   (click)="GotoRequestList()" class="link-primary marginright"> <i style="color: darkblue;" class="bi bi-arrow-left-short"></i>Back</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+<div class="row my-3">
+      
+    
+    <div class="col-md-12 recycle-step  recycle-form float-end p-2" >
+        <div class="row m-12 recycle-form-container">
+ 
+          
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Request Details
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row recycle-device-form m-3 d-flex justify-content-center">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="contactName" class="mb-2"> Request No: </label>
+                                    <input type="text" class="form-control" [(ngModel)]="RequestNumber" id="RequestNumber" readonly="">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="contactName" class="mb-2"> Request Date: </label>
+                                    <input class="form-control" name="dateT"  [ngModel]="requestDate |date:'yyyy-MM-dd'" #dateT="ngModel" readonly="" type="date"/>
+
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="contactName" class="mb-2"> Requested By: </label>
+                                    <input type="text" class="form-control" [(ngModel)]="requestedBy" id="requestedBy" readonly="">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="contactName" class="mb-2"> Email Address: </label>
+                                    <input type="text" class="form-control" [(ngModel)]="emailId" id="emailId" readonly="">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="contactName" class="mb-2"> Dispatch Mode: </label>
+                                    <input type="text" class="form-control" [(ngModel)]="dispatchMode" id="dispatchMode" readonly="">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="contactName" class="mb-2"> Transaction Type: </label>
+                                    <input type="text" class="form-control" [(ngModel)]="transactionType" id="transactionType" readonly="">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="contactName" class="mb-2"> Status: </label>
+                                    <input type="text" class="form-control" [(ngModel)]="status" id="status" readonly="">
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                           
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Device Details
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row recycle-device-form m-3 d-flex justify-content-center">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="contactName" class="mb-2"> Category: </label>
+                                    <input type="text" class="form-control" [(ngModel)]="category" id="category" readonly="">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="contactName" class="mb-2"> Brand: </label>
+                                    <input type="text" class="form-control" [(ngModel)]="brand" id="brand" readonly="">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="contactName" class="mb-2"> Model: </label>
+                                    <input type="text" class="form-control" [(ngModel)]="model" id="model" readonly="">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="contactName" class="mb-2"> Variant: </label>
+                                    
+                                    <input type="text" class="form-control" [(ngModel)]="varient" id="varient" readonly="">
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="row recycle-device-form m-3 d-flex justify-content-center"> 
+                           
+            
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="contactName" class="mb-2"> Processor: </label>
+ 
+                                    <input type="text" class="form-control" [(ngModel)]="processor" id="processor" readonly="">
+                                </div>
+                            </div>
+            
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="contactName" class="mb-2"> RAM: </label>
+                                    <input type="text" class="form-control" [(ngModel)]="ram" id="ram" readonly="">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="contactName" class="mb-2"> Storage: </label>
+                                    <input type="text" class="form-control" [(ngModel)]="storage" id="storage" readonly="">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="contactName" class="mb-2"> Battery Capacity: </label>
+                                    <input type="text" class="form-control" [(ngModel)]="batterycapacity" id="batterycapacity" readonly="">
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="contactName" class="mb-2"> Camera: </label>
+                                    <input type="text" class="form-control" [(ngModel)]="camera" id="camera" readonly="">
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="row recycle-device-form m-3 d-flex justify-content-center">
+                            
+                            
+                           
+  
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="contactName" class="mb-2"> VPN: </label>
+                                    <input type="text" class="form-control" [(ngModel)]="vpn" id="vpn" readonly="">
+                                </div>
+                            </div>
+            
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="contactName" class="mb-2"> Max Recycle Value: </label>
+                                    <input type="text" class="form-control"  [(ngModel)]="maxrecyclevalue" id="maxrecyclevalue" readonly="">
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="contactName" class="mb-2"> Tentative Recycle Value: </label>
+                                    <input type="text" class="form-control" [(ngModel)]="tentativeRecycleValue" id="tentativeRecycleValue" readonly="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                </div>
+                            
+            
+                            
+                           
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Damage Details
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div  class="row mb-3 container-fluid">
+                            <div *ngFor="let defect of defects" class="col-md-2">
+                                <div class="form-group">
+                                    <label for="contactName" class="mb-2"><b><i>{{defect.DefectTitle}}</i></b>: </label>
+                                     
+                                          <!-- <h5 class="card-title">Defect Details</h5> -->
+                                          
+                                          <div  *ngFor="let DefectDetail of defect.DefectDetails  let i = index">
+
+                                          {{i+1}}  {{DefectDetail.Description}}       
+                                          </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                        Address Details
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+
+                        <div class="row recycle-device-form m-3 d-flex justify-content-center">
+                            
+                            
+                           
+  
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <ul class="list-group">
+                                        <li class="list-group-item active" aria-current="true">Pickup Address</li>
+                                        <li class="list-group-item">Full Name      :  {{PFullname}}</li>
+                                        <li class="list-group-item">Address Line 1 : {{PAddressLine1}}</li>
+                                        <li class="list-group-item">Address Line 2 : {{PAddressLine2}}</li>
+                                        <li class="list-group-item">Landmark       : {{PLandMark}}</li>
+                                        <li class="list-group-item">Phone Number   : {{PPhoneNumber}}</li>
+                                        <li class="list-group-item">City           : {{PCity}}</li>
+                                        <li class="list-group-item">State          : {{PState}}</li>
+                                        <li class="list-group-item">Country        :{{PCountry}}</li>
+                                        
+                                        </ul>
+                          </div>
+                          </div>
+
+
+                          <div class="col-md-6">
+                            <div class="form-group">
+                                <ul class="list-group">
+                                    <li class="list-group-item active" aria-current="true">Delivery Address</li>
+                                    <li class="list-group-item">Full Name      :  {{DFullname}}</li>
+                                    <li class="list-group-item">Address Line 1 : {{DAddressLine1}}</li>
+                                    <li class="list-group-item">Address Line 2 : {{DAddressLine2}}</li>
+                                    <li class="list-group-item">Landmark       : {{DLandMark}}</li>
+                                    <li class="list-group-item">Phone Number   : {{DPhoneNumber}}</li>
+                                    <li class="list-group-item">City           : {{DCity}}</li>
+                                    <li class="list-group-item">State          : {{DState}}</li>
+                                    <li class="list-group-item">Country        :{{DCountry}}</li>
+                                    
+                                    </ul>
+                        </div>
+                    </div>
+                          </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Uploaded Images
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                      <div class="accordion-body" *ngFor="let item of uploadedImages">
+                          <!-- <div class="row">
+                        <div class="col-md-6">
+                            <img [src]="imageBaseURL + item" style="height: 300px;width: 400px;" class="rounded float-start" >
+                        </div>
+                         </div> -->
+                         <div class="row"> 
+
+                            <div class="col-lg-4 col-md-4 col-xs-4 thumb">
+                                <a class="thumbnail" href="#">
+                                    <img [src]="imageBaseURL + item" style="height: 300px;width: 400px;" class="rounded float-start" >
+                                </a>
+                            </div>
+                           
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+              </div>
+        </div>
+        <div class="row m-3 recycle-form-buttons">
+            <div class="col-md-12 text-center" >
+                  
+                <!-- <span class="tentativePoints"> Total Recycle Points are  : {{tentativeRecycleValue}}</span><span class="mx-2">Points*</span> -->
+                <!-- <div>Role : {{authService.currentUser.Role | uppercase }}</div> -->
+                <div class="form-group" *ngIf="isFinalPriceEditable == true">
+                    <label for="contactName" class="mb-2"> Total  Recycle Points: </label>
+                    <input type="text" class="form-control"    [(ngModel)]="tentativeRecycleValue" id="tentativeRecycleValue"  >
+                </div>
+            </div>
+            <div class="col-md-12 text-center" >
+                <div class="form-group">
+                    <label for="Remarks" class="mb-2"> Remarks: </label>
+                    <textarea  rows="3" class="form-control" [(ngModel)]="remarks" id="remarks">
+                        </textarea>
+
+                </div>
+            </div>
+            <div class="col-md-4 text-center" >
+            </div>  
+            </div>
+            <div class="row m-3 recycle-form-buttons">
+            <div class="col-md-7">
+                <button class="btn btn-primary float-end marginright" (click)="ApproveReject(false)"  >Reject</button>
+                <button class="btn btn-primary float-end marginright" (click)="ApproveReject(true)" >Approve</button>
+                
+           
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+ <!-- {{this.recycleRequestDetail | json}} -->

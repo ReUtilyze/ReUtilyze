@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light bg-primary erma-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="['/']"><img src="./assets/logo.png" class="erma-logo"/></a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+      <li class="nav-item dropdown mr-4" *ngIf = "authService.isLoggedIn()" >
+          <a class="nav-link dropdown-toggle" [ngClass]="mstatus ? 'show' : ''" (click)="MastersclickEvent($event)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i #toggleButton class="bi bi-grid"></i>
+          </a>
+          <ul #menu class="dropdown-menu dropdown-menu-right shadow text-left pull-left menus" dir="ltr" [ngClass]="mstatus ? 'show' : ''" aria-labelledby="navbarDropdown">
+            <li class="px-4 py-3 text-white d-none d-xl-block dropdown-nav-title">
+              <span class="title-icon"><i class="bi bi-grid"></i></span>
+              <span class="title-text">Masters</span>
+            </li>
+            <li class="px-4 py-3 text-white d-none d-xl-block"><span>User  </span></li>
+            <li class="px-4 py-3 text-white d-none d-xl-block"><span>Category  </span></li>
+            <li class="px-4 py-3 text-white d-none d-xl-block"><span>Brand  </span></li>
+            <li class="px-4 py-3 text-white d-none d-xl-block"><span>Defect  </span></li>
+            <li class="px-4 py-3 text-white d-none d-xl-block"><span>Defect Details</span></li>
+           </ul>
+        </li>
+        
+        <!--   <li class="nav-item dropdown mr-5"  >
+          <a class="nav-link dropdown-toggle" [ngClass]="status ? 'show' : ''" (click)="clickEvent($event)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i #toggleButton class="bi bi-briefcase"></i>
+          </a>
+          <ul #menu  class="dropdown-menu dropdown-menu-right shadow text-left pull-left" dir="ltr" [ngClass]="status ? 'show' : ''" aria-labelledby="navbarDropdown">
+            <li class="px-4 py-3 text-white d-none d-xl-block dropdown-nav-title">
+              <span class="title-icon"><i class="bi bi-briefcase"></i></span>
+              <span class="title-text">Vendor Links</span>
+            </li>
+            <li class="px-4 py-3 text-white d-none d-xl-block"><span>Apple  </span></li>
+            <li class="px-4 py-3 text-white d-none d-xl-block"><span>One Plus</span></li>
+            <li class="px-4 py-3 text-white d-none d-xl-block"><span>Lenovo   </span></li>
+            <li class="px-4 py-3 text-white d-none d-xl-block"><span>HP  </span></li>
+            <li class="px-4 py-3 text-white d-none d-xl-block"><span>Dell  </span></li>
+          </ul>
+        </li> -->
+        <li class="nav-item dropdown mr-5" *ngIf = "authService.isLoggedIn()" >
+          <a class="nav-link dropdown-toggle" [ngClass]="uostatus ? 'show' : ''" (click)="UserOptionsclickEvent($event)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i #toggleButton class="bi bi-person-circle"></i>
+          </a>
+          <ul #menu class="dropdown-menu dropdown-menu-right shadow text-left pull-left menus" dir="ltr" [ngClass]="uostatus ? 'show' : ''" aria-labelledby="navbarDropdown">
+            <li class="px-4 py-3 text-white d-none d-xl-block dropdown-nav-title">
+              <span class="title-icon"><i class="bi bi-person-fill"></i></span>
+              <span class="title-text">User Options</span>
+            </li>
+            <li class="px-4 py-3 text-white d-none d-xl-block"><span>{{authService.currentUser.userName | uppercase }}  </span></li>
+            <li class="px-4 py-3 text-white d-none d-xl-block">
+              <div>Name : {{authService.currentUser.unique_name | uppercase }}</div>
+              <div>Email : {{authService.currentUser.Email | uppercase }}</div>
+              <div>Role : {{authService.currentUser.Role | uppercase }}</div>
+            </li>
+            <!---<li class="my-3 text-white d-xl-block dropdown-nav-title"><button type="button" class="nav-link btn btn-primary w-100" routerLink="web/customer/profile" (click)="UserOptionsclickEvent($event)">Profile</button></li>-->
+            <li class="my-3 text-white d-xl-block dropdown-nav-title"><button type="button" class="nav-link btn btn-primary w-100" (click)="logout($event)">Logout</button></li>
+          </ul>
+        </li>
+    
+      </ul>
+    </div>
+  </div>
+</nav>

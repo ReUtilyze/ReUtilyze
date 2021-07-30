@@ -1,0 +1,92 @@
+<div class="page-header newRow">    
+    <div class="row">
+      <div class="col-md-10">
+        <h1 class="display-6"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">   Requests </font></font></h1>
+      </div>
+      <div class="col-md-2">
+        <div class="d-grid gap-2 d-md-block">
+         <a   (click)="GotoDashboard()" class="link-primary marginright"> <i style="color: darkblue;" class="bi bi-arrow-left-short"></i>Back</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+<div class="searchRmaRequestContainer">
+ 
+    <div class="row mt-3">
+        <form class="rmaResellerSearchFilters" [formGroup]="searchForm" (submit)="filterSearch(searchForm.value)">
+            <div class="form-group input-right col-md-3">
+                <label for="searchStatus">Status:</label>
+                <select name="searchStatus" id="searchStatus" formControlName="searchStatus"    >
+                    <option *ngFor="let item of search_options" [ngValue]="item.id">{{item.value}}</option>
+                </select>
+            </div>
+            <div class="form-group dateInput input-right col-md-3">
+                <label for="fromDateFilter">FromDate:</label>
+                <input type="text" bsDatepicker #fromDp="bsDatepicker" class="form-control" id="fromDateFilter" formControlName="fromDateFilter" (bsValueChange)="onValueChange($event)" name="fromDate" autocomplete="off" placeholder="DD-MM-YYYY">
+                <i class="bi bi-calendar" (click)="fromDp.toggle()"></i>
+            </div>
+            <div class="form-group dateInput input-right col-md-3">
+                <label for="toDateFilter">ToDate:</label>
+                <input type="text" bsDatepicker #toDp="bsDatepicker" class="form-control" id="toDateFilter" formControlName="toDateFilter" [minDate]="minDate" name="toDate" autocomplete="off" placeholder="DD-MM-YYYY">
+                <i class="bi bi-calendar" (click)="toDp.toggle()"></i>
+            </div>
+            <div class="form-group action col-md-3">
+                <button type="submit" class="btn btn-primary btn-default" id="searchRmaFilterForm">
+                    <span>Search</span>
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-12 my-auto">
+            <table class="table rma-table rma-search" id="rmaResellerSearchTable">
+                <thead>
+                    <tr role="row" style="padding: 10px;">
+                        <th class="text-start p-custom">Request No</th>
+                        <th class="text-start p-custom">Request Date</th>
+                        <th class="text-start table-status p-custom">Device Details</th>
+                        <th class="text-start p-custom">Tentative Points</th>
+                        <th class="text-start p-custom">Final Points</th>
+                        <th class="text-start p-custom">Status</th>
+                    </tr>
+                </thead>
+                <tbody *ngIf="count > 0">
+                    <tr *ngFor="let request of requests | paginate : {
+                            itemsPerPage: tableSize,
+                            currentPage: page,
+                            totalItems: count
+                        };
+                        let i = index">
+                        <td class="text-start p-custom"><a routerLink="/claimrequestdetails/{{request.Id}}">{{request.RequestNo}}</a></td>
+                        <td class="text-start p-custom">{{request.RequestDate | date: 'MM/dd/YYYY' }}</td>
+                        <td class="text-start table-status p-custom">{{request.ModelVariant }}</td>
+                        <td class="text-start table-status p-custom">{{request.TentativeRecycleValue }}</td>
+                        <td class="text-start table-status p-custom">{{request.FinalRecycleValue }}</td>
+                        <td class="text-start table-status p-custom">{{request.Status }}</td>
+        
+                    </tr>
+                </tbody>
+                <tbody  *ngIf="count == 0">
+                    <tr class="odd">
+                        <td colspan="5" class="text-center">No Data Found</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-5 float-start" *ngIf="count > 0">
+            Showing {{currentPageRange}} of {{count}} results 
+        </div>
+        <div class="col-md-2 float-start" *ngIf="count > 0">
+            <label for="searchStatus" class="float-start col-md-7">Items per page:</label>
+            <select name="itemsPerPage" id="itemsPerPage"  class="float-end col-md-5 w-auto" (change)="onPageSizeChange($event)">
+                <option *ngFor="let option of tableSizeOptions" [ngValue] = "option">{{option}}</option>
+            </select>
+        </div>
+        <div class="col-md-5 float-end pagination-main" *ngIf="count > 0">
+            <pagination-controls class="float-end" (pageChange)="tabSize($event)" previousLabel=""
+            nextLabel=""></pagination-controls>
+        </div>
+    </div>
+</div>

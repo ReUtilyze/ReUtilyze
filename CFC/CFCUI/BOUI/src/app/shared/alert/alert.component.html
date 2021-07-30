@@ -1,0 +1,10 @@
+<div class="page-header-container page-title">
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <div *ngFor="let alert of alerts" class="{{cssClass(alert)}}" [class.sticky]="isSticky">
+                <span [innerHTML]="alert.message"></span>
+                <a class="close" (click)="removeAlert(alert)"><i class="bi bi-x-lg"></i></a>
+            </div>
+        </div>
+    </div>
+</div>

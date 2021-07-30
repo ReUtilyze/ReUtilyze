@@ -1,0 +1,86 @@
+<div class="row">
+    <div class="col">
+        <div class="row tab-title">
+            <h5>Upcoming Orders</h5>
+        </div>
+        <div class="row tab-content">
+            <div class="row my-3">
+                <!-- <form class="rmaResellerSearchFilters d-inline-block"> -->
+                    <div class="form-group col-md-3">
+                        <label for="searchStatus" class="mb-2">Status:</label>
+                        <select name="searchStatus" id="searchStatus" formControlName="searchStatus" class="form-select">
+                            <option value="" selected>Select Status</option>
+                            <!-- <option *ngFor="let item of status | keyvalue" [ngValue]="item.key">{{'eRMA.Status.'+item.key | translate}}</option> -->
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="fromDateFilter" class="mb-2">From Date:</label>
+                        <input type="text" class="form-control" id="fromDateFilter" formControlName="fromDateFilter" name="fromDate" autocomplete="off" placeholder="DD-MM-YYYY">
+                        <!-- <i class="bi bi-calendar"></i> -->
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="toDateFilter" class="mb-2">To Date:</label>
+                        <input type="text" class="form-control" id="toDateFilter" formControlName="toDateFilter" name="toDate" autocomplete="off" placeholder="DD-MM-YYYY">
+                        <!-- <i class="bi bi-calendar"></i> -->
+                    </div>
+                    <div class="form-group action col-md-3">
+                        <button type="submit" class="btn btn-primary btn-default search-btn" id="searchRmaFilterForm">
+                            <span>Search</span>
+                        </button>
+                    </div>
+                <!-- </form> -->
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12 my-auto">
+                    <table class="table rma-table rma-search" id="rmaResellerSearchTable">
+                        <thead>
+                            <tr role="row">
+                                <th class="text-left p-2">Request ID</th>
+                                <th class="text-left p-2">Request Date</th>
+                                <th class="text-left p-2">Device Type</th>
+                                <th class="text-left p-2">Device Brand</th>
+                                <th class="text-left p-2">Device Model</th>
+                                <th class="text-left p-2">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody *ngIf="count > 0">
+                            <tr *ngFor="let order of orders | paginate : {
+                                itemsPerPage: tableSize,
+                                currentPage: page,
+                                totalItems: count
+                            };
+                            let i = index">
+                                <td class="text-left p-2">{{order.order_id}}</td>
+                                <td class="text-left p-2">{{order.request_date}}</td>
+                                <td class="text-left p-2">{{order.device_type}}</td>
+                                <td class="text-left p-2">{{order.device_brand}}</td>
+                                <td class="text-left p-2">{{order.device_model}}</td>
+                                <td class="text-left p-2"><a>View</a></td>
+                            </tr>
+                        </tbody>
+                        <tbody *ngIf="count == 0">
+                            <tr class="odd">
+                                <td colspan="5" class="text-center p-2">No Data Found</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <!-- <div class="col-md-5 float-start" *ngIf="count > 0">
+                    Showing {{currentPageRange}} of {{count}} results 
+                </div> -->
+                <div class="col-md-6 float-start" *ngIf="count > 0">
+                    <label for="searchStatus" class="float-start">Items per page:</label>
+                    <select name="itemsPerPage" id="itemsPerPage"  class="float-start w-auto mx-2 form-select" (change)="onPageSizeChange($event)">
+                        <option *ngFor="let option of tableSizeOptions" [value] = "option">{{option}}</option>
+                    </select>
+                </div>
+                <div class="col-md-6 float-start pagination-main" *ngIf="count > 0">
+                    <pagination-controls class="float-end" (pageChange)="tabSize($event)" previousLabel=""
+                    nextLabel=""></pagination-controls>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

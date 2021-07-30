@@ -1,0 +1,20 @@
+{
+	"Category": [
+		{
+			"Id": 1,
+			"CategoryName": "Mobile",
+			"CategoryImageName": "\\mobile.png"
+		},
+		{
+			"Id": 2,
+			"CategoryName": "Laptop",
+			"CategoryImageName": "\\laptop.png"
+		},
+		{
+			"Id": 3,
+			"CategoryName": "Tablet",
+			"CategoryImageName": "\\Tablet.png"
+		}
+	]
+
+}

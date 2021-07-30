@@ -1,0 +1,40 @@
+<div class="row customer-profile my-3">
+    <div class="col-md-4 customer-profile-nav float-start p-2">
+        <div class="m-3">
+            <div class="row device-specs mb-3">
+                <div class="tab-sidebar-title col-md-12 p-3" [class.active]="currentTab == 'tab-customer-account'">
+                    <div class="float-start">Account Information</div>
+                </div>
+                <hr class="m-0">
+                <div class="tab-sidebar-title col-md-12 p-3" [class.active]="currentTab == 'tab-customer-details'">
+                    <div class="float-start">Address Book</div>
+                </div>
+                <hr class="m-0">
+                <div class="tab-sidebar-title col-md-12 p-3" [class.active]="currentTab == 'tab-customer-orders'">
+                    <div class="float-start" (click)="switchTab('tab-customer-orders')">My Requests</div>
+                </div>
+                <hr class="m-0">
+                <div class="tab-sidebar-title col-md-12 p-3" [class.active]="currentTab == 'tab-customer-redeem'">
+                    <div class="float-start">Redeem Points</div>
+                </div>
+                <hr class="m-0">
+                <div class="tab-sidebar-title col-md-12 p-3">
+                    <div class="float-start" (click)="authService.logout()">Logout</div>
+                </div>
+                <hr class="m-0">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8 customer-profile-details float-end p-2">
+        <div class="row m-3 recycle-form-container">
+                <!-- Components here -->
+                <app-customer-dashboard  *ngIf="currentTab == 'tab-customer-dashboard'"></app-customer-dashboard>
+                <app-customer-profile-update *ngIf="currentTab == 'tab-customer-account'"></app-customer-profile-update>
+                <app-customer-address *ngIf="currentTab == 'tab-customer-details'"></app-customer-address>
+                <app-customer-orders *ngIf="currentTab == 'tab-customer-orders'"></app-customer-orders>
+                <app-customer-upcomingorders *ngIf="currentTab == 'tab-customer-upcoming'"></app-customer-upcomingorders>
+                <app-customer-redeem-points *ngIf="currentTab == 'tab-customer-redeem'"></app-customer-redeem-points>
+                <!-- Components here -->
+        </div>
+    </div>
+</div>

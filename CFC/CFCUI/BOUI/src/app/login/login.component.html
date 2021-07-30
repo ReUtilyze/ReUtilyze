@@ -1,0 +1,60 @@
+<div class="loginFormContainer mt-3">
+    <form [formGroup]="loginForm" (ngSubmit)="signIn(loginForm.value)">
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <div class="form-container">
+                    <div class="form-header">
+                        <div class="form-logo">
+                            <img src="./assets/login-logo.png" class="login-logo"/>
+                        </div>
+                    </div>
+                    <div class="form-content">
+                        <!--<div class="row mt-3" *ngIf="invalidLogin">
+                            <div class="form-subtext alert alert-danger">
+                                Invalid username and/or password.
+                            </div>
+                        </div>-->
+                        <div class="row mt-3">
+                            <div class="form-subtext">
+                                Please fill out the fields below in order to access your account.
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="form-group">
+                                <label for="username" class="mb-1">User Name:*</label>
+                                <input type="text" class="form-control" formControlName="userName" [class.ng-submitted]="formSubmitted" id="userName" name="userName" autocomplete="off">
+                                <div *ngIf="formSubmitted || (f.userName.touched && f.userName.invalid)" class="input-invalid">
+                                    <div *ngIf="f.userName.errors?.required">
+                                        This is a required field.
+                                    </div>
+                                    <div *ngIf="f.userName.errors?.email">
+                                        Please enter a valid email.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="form-group">
+                                <label for="password" class="mb-1">Password:*</label>
+                                <input type="password" class="form-control" formControlName="password" [class.ng-submitted]="formSubmitted" id="password" name="password" autocomplete="off">
+                                <div *ngIf="formSubmitted || (f.password.touched && f.password.invalid)" class="input-invalid">
+                                    <div *ngIf="f.password.errors?.required">
+                                        This is a required field.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="row mt-3 mb-3">
+                            <div class="col-md-12 actionButtons">
+                                <button type="submit" class="btn btn-primary ml-1 w-100 text-center" id="loginButton" [disabled]="loginForm.invalid || loading">
+                                    <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                                    <span *ngIf="!loading">Login</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

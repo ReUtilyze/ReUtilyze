@@ -1,0 +1,135 @@
+{
+    "ModelVarient": [
+        {
+            "Id": 1,
+            "VarientName": "4GB/64GB",
+            "BrandModelId": 1,
+            "Brand": "iPhone XS",
+            "Processor": "Apple A12 Bionic",
+            "RAM": "4GB",
+            "Storage": "64GB",
+            "BatteryCapacity": "2658 mAh",
+            "Camera": "10MP",
+            "VPN": "AP001",
+            "MaxRecycleValue": 1000
+        },
+        {
+            "Id": 2,
+            "VarientName": "4GB/256GB",
+            "BrandModelId": 1,
+            "Brand": "iPhone XS",
+            "Processor": "Apple A12 Bionic",
+            "RAM": "4GB",
+            "Storage": "256GB",
+            "BatteryCapacity": "2658 mAh",
+            "Camera": "12MP",
+            "VPN": "AP002",
+            "MaxRecycleValue": 1200
+        },
+        {
+            "Id": 3,
+            "VarientName": "4GB/512GB",
+            "BrandModelId": 1,
+            "Brand": "iPhone XS",
+            "Processor": "Apple A12 Bionic",
+            "RAM": "4GB",
+            "Storage": "512GB",
+            "BatteryCapacity": "2658 mAh",
+            "Camera": "14MP",
+            "VPN": "AP003",
+            "MaxRecycleValue": 1400
+        },
+        {
+            "Id": 4,
+            "VarientName": " 3GB/32GB",
+            "BrandModelId": 1,
+            "Brand": "Apple iPhone 7 Plus",
+            "Processor": "Apple A10 Fusion",
+            "RAM": "3GB",
+            "Storage": "32GB",
+            "BatteryCapacity": "2900 mAh",
+            "Camera": "14MP",
+            "VPN": "AP004",
+            "MaxRecycleValue": 1600
+        },
+        {
+            "Id": 5,
+            "VarientName": "8GB/12GB",
+            "BrandModelId": 4,
+            "Brand": "One Plus 9",
+            "Processor": "Qualcomm Snapdragon 888",
+            "RAM": "8GB",
+            "Storage": "128GB",
+            "BatteryCapacity": "4500 mAh",
+            "Camera": "10MP",
+            "VPN": "ON001",
+            "MaxRecycleValue": 1400
+        },
+        {
+            "Id": 6,
+            "VarientName": "12GB/256GB",
+            "BrandModelId": 4,
+            "Brand": "One Plus 9",
+            "Processor": "Qualcomm Snapdragon 888",
+            "RAM": "12GB",
+            "Storage": "256GB",
+            "BatteryCapacity": "4500 mAh",
+            "Camera": "12MP",
+            "VPN": "ON002",
+            "MaxRecycleValue": 1500
+        },
+        {
+            "Id": 7,
+            "VarientName": "6GB/128GB",
+            "BrandModelId": 5,
+            "Brand": "Redmi Note 9 Pro",
+            "Processor": "Qualcomm Snapdragon 720G",
+            "RAM": "6GB",
+            "Storage": "128GB",
+            "BatteryCapacity": "5020 mAh",
+            "Camera": "10MP",
+            "VPN": "RD001",
+            "MaxRecycleValue": 900
+        },
+        {
+            "Id": 8,
+            "VarientName": "4GB/64GB",
+            "BrandModelId": 7,
+            "Brand": "Redmi Note 9 Pro",
+            "Processor": "Qualcomm Snapdragon 720G",
+            "RAM": "4GB",
+            "Storage": "64GB",
+            "BatteryCapacity": "5020 mAh",
+            "Camera": "8MP",
+            "VPN": "RD02",
+            "MaxRecycleValue": 700
+        },
+        {
+            "Id": 9,
+            "VarientName": "4GB/128GB",
+            "BrandModelId": 7,
+            "Brand": "Redmi Note 9 Pro",
+            "Processor": "Qualcomm Snapdragon 720G",
+            "RAM": "4GB",
+            "Storage": "128GB",
+            "BatteryCapacity": "5020 mAh",
+            "Camera": "8MP",
+            "VPN": "RD03",
+            "MaxRecycleValue": 1000
+        },
+        {
+            "Id": 10,
+            "VarientName": "6GB/64GB",
+            "BrandModelId": 8,
+            "Brand": "Redmi Note 10S",
+            "Processor": "MediaTek Helio G95",
+            "RAM": "6GB",
+            "Storage": "648GB",
+            "BatteryCapacity": "5000 mAh",
+            "Camera": "10MP",
+            "VPN": "RD04",
+            "MaxRecycleValue": 750
+        }
+
+    ]
+}
