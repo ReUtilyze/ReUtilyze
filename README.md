@@ -75,10 +75,18 @@ ReUtilyze will help minimize the impact of electronic waste on the environment d
 #### Run it
 * Download the Github code for single page application and Web API Project.
 * Install node.js
-* Install Angular
+* Install Angular CLI using  <code>npm install -g @angular/cli</code>
+* Install.net framework 5.0
+* The API microservices makes use of below packages from NuGet all of which are required to be installed in order to compile the app or run on localhost
+ *1. Microsoft.AspNetCore.Authentication.JwtBearer (https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer/5.0.8?_src=template)
+ 2. https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.NewtonsoftJson/5.0.8?_src=template
+ 3. 
+
  
 * Running the web application :
     01. To run the single page application on a local machine:<br />
+
+     Open application folder path 
         Follow below steps :
         
         <code>npm install</code>
