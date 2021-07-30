@@ -1,0 +1,29 @@
+{
+	"Brands": [
+		{
+			"Id": 1,
+			"BrandName": "Apple",
+			"CategoryId": 1,
+			"BrandImageName": "\\Apple.png"
+		},
+		{
+			"Id": 2,
+			"BrandName": "OnePlus",
+			"CategoryId": 1,
+			"BrandImageName": "\\OnePlus.png"
+		},
+		{
+			"Id": 3,
+			"BrandName": "RedMi",
+			"CategoryId": 1,
+			"BrandImageName": "\\Redmi.png"
+		},
+		{
+			"Id": 4,
+			"BrandName": "Dell",
+			"CategoryId": 2,
+			"BrandImageName": "\\Dell.png"
+		}
+	]
+
+}

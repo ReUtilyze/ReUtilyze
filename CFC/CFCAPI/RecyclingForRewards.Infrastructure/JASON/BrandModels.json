@@ -1,0 +1,84 @@
+{
+	"BrandModels": [
+		{
+			"Id": 1,
+			"ModelName": "iPhone XS",
+			"ModelImageName": "\\iPhoneXS.png",
+			"BrandId": 1,
+			"Brand": "Apple",
+			"CategoryId": 1,
+			"Category": "Mobile"
+		},
+		{
+			"Id": 2,
+			"ModelName": "iPhone 7 Plus",
+			"ModelImageName": "\\iPhone7Plus.png",
+			"BrandId": 1,
+			"Brand": "Apple",
+			"CategoryId": 1,
+			"Category": "Mobile"
+
+		},
+		{
+			"Id": 3,
+			"ModelName": "iPhone 5",
+			"ModelImageName": "\\iPhone5.png",
+			"BrandId": 1,
+			"Brand": "Apple",
+			"CategoryId": 1,
+			"Category": "Mobile"
+
+		},
+		{
+			"Id": 4,
+			"ModelName": "One Plus 9",
+			"ModelImageName": "\\OnePlus9.png",
+			"BrandId": 2,
+			"Brand": "OnePlus",
+			"CatgoryID": 1,
+			"Category": "Mobile"
+
+		},
+		{
+			"Id": 5,
+			"ModelName": "OnePlus 7T Pro",
+			"ModelImageName": "\\OnePlus7TPro.png",
+			"BrandId": 2,
+			"Brand": "OnePlus",
+			"CatgoryID": 1,
+			"Category": "Mobile"
+
+		},
+		{
+			"Id": 6,
+			"ModelName": "OnePlus 8 Pro",
+			"ModelImageName": "\\OnePlus8Pro.png",
+			"BrandId": 2,
+			"Brand": "OnePlus",
+			"CatgoryID": 1,
+			"Category": "Mobile"
+
+		},
+		{
+			"Id": 7,
+			"ModelName": "Redmi Note 9 Pro",
+			"ModelImageName": "\\Redmi Note9Pro.png",
+			"BrandId": 3,
+			"Brand": "RedMi",
+			"CatgoryID": 1,
+			"Category": "Mobile"
+
+		},
+		{
+			"Id": 8,
+			"ModelName": "Redmi Note 10S",
+			"ModelImageName": "\\RedmiNote10S.png",
+			"BrandId": 3,
+			"Brand": "RedMi",
+			"CatgoryID": 1,
+			"Category": "Mobile"
+
+		}
+	]
+
+}

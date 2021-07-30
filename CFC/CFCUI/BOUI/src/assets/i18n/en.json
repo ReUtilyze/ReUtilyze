@@ -1,0 +1,76 @@
+{
+	"eRMA": {
+		"CustomerProfile":{
+			"Title": "Customer Profile",
+			"Label.ContactName": "Contact Name",
+			"Label.ContactEmail": "Contact Email",
+			"Label.OfficeNo": "Office No",
+			"Label.MobileNumber": "Mobile Number",
+			"Label.ShipToAddress": "Ship to Address",
+			"Comment.MobileNo":"Note: Mobile number is used for SMS communication.",
+			"Button.Save": "Save"
+		},
+		"RMASearch":{
+			"Title": "RMA Requests",
+			"Label.Status": "Status",
+			"Label.FromDate": "From Date",
+			"Label.ToDate": "To Date",
+			"Button.Search": "Search",
+			"Button.CreateNewRequest": "Create New Request",
+			"Table.RequestId": "Request ID",
+			"Table.RequestDate": "Request Date",
+			"Table.Status": "Status",
+			"Table.IMRemarks": "IM Remarks",
+			"Table.Rating": "Rating"
+		},
+		"CreateRMA":{
+			"Title": "New RMA Request",
+			"Label.ContactName": "Contact Name",
+			"Label.ContactEmail": "Contact Email",
+			"Label.OfficeNo": "Office No",
+			"Label.MobileNumber": "Mobile Number",
+			"Label.CustomerCode": "Customer Code",
+			"Label.ShipToAddress": "Ship to Address",
+			"Label.SerialNo":"Serial No",
+			"Table.SerialNo": "Serial No",
+			"Table.SKU": "SKU",
+			"Table.VPN": "VPN",
+			"Table.VendorCode": "Vendor Code",
+			"Table.ProductLine": "Product Line",
+			"Table.SalesDate": "Sales Date",
+			"Table.SalesOrderNo": "Sales Order No",
+			"Table.ProductDesc": "Product Desc",
+			"Table.DamageInfo": "Damage Info",
+			"Table.SupportingDocs": "Supporting Docs",
+			"Table.Delete": "Delete",
+			"Button.SaveDraft":"Save Draft",
+			"Button.Submit":"Submit",
+			"Button.RetrieveInfo":"Retrieve Info",
+			"Button.ImportExcel":"Import Excel",
+			"Button.DownloadFormat":"Download Format",
+			"Comment.MobileNo":"Note: Mobile number is used for SMS communication.",
+			"Comment.SerialNo":"Please enter multiple serial numbers with comma separation."
+		},
+		"ResellerLogin":{
+			"Title": "Login"
+		},
+		"Status":{
+			"3":"Submitted",
+			"4":"Rejected",
+			"6":"Completed",
+			"7":"Need Info",
+			"8":"Cancelled",
+			"9":"In Review"
+		},
+		"ViewRMA":{
+			"Title": "View Request Details"
+		},
+		"ResellerFeedback":{
+			"Title": "Reseller Feedback"
+		},
+		"Validation":{
+
+		},
+		"BackLink": "Back"
+	}
+}

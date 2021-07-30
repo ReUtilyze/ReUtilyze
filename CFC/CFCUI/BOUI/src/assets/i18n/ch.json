@@ -1,0 +1,76 @@
+{
+	"eRMA": {
+		"CustomerProfile":{
+			"Title": "编辑个人资料",
+			"Label.ContactName": "联系人姓名",
+			"Label.ContactEmail": "联系电子邮件",
+			"Label.OfficeNo": "座机",
+			"Label.MobileNumber": "手机号(优先)",
+			"Label.ShipToAddress": "收货地址",
+			"Comment.MobileNo":"注：手机号码用于接收短信提醒。",
+			"Button.Save": "提交"
+		},
+		"RMASearch":{
+			"Title": "RMA请求",
+			"Label.Status": "状态",
+			"Label.FromDate": "日期从",
+			"Label.ToDate": "到:",
+			"Button.Search": "查询",
+			"Button.CreateNewRequest": "申请换修",
+			"Table.RequestId": "申请 ID",
+			"Table.RequestDate": "申请日期",
+			"Table.Status": "状态",
+			"Table.IMRemarks": "备注",
+			"Table.Rating": "英迈服务满意度反馈"
+		},
+		"CreateRMA":{
+			"Title": "新的RMA申请",
+			"Label.ContactName": "联系人姓名",
+			"Label.ContactEmail": "联系电子邮件",
+			"Label.OfficeNo": "座机",
+			"Label.MobileNumber": "手机号(优先)",
+			"Label.CustomerCode": "客户编码",
+			"Label.ShipToAddress": "收货地址",
+			"Label.SerialNo":"序列号",
+			"Table.SerialNo": "序列号",
+			"Table.SKU": "SKU",
+			"Table.VPN": "产品型号",
+			"Table.VendorCode": "供应商代码",
+			"Table.ProductLine": "产品线",
+			"Table.SalesDate": "销售日期",
+			"Table.SalesOrderNo": "销售单号",
+			"Table.ProductDesc": "产品描述",
+			"Table.DamageInfo": "故障描述",
+			"Table.SupportingDocs": "证明材料",
+			"Table.Delete": "删除",
+			"Button.SaveDraft":"另存为草稿",
+			"Button.Submit":"提交",
+			"Button.RetrieveInfo":"搜索信息",
+			"Button.ImportExcel":"导入 Excel",
+			"Button.DownloadFormat":"下载导入模板",
+			"Comment.MobileNo":"注：手机号码用于接收短信提醒。",
+			"Comment.SerialNo":"输入多个序列号时请用逗号进行分隔。"
+		},
+		"ResellerLogin":{
+			"Title": "Login"
+		},
+		"Status":{
+			"3":"已提交",
+			"4":"已拒绝",
+			"6":"已完成",
+			"7":"需要更新信息",
+			"8":"已取消",
+			"9":"受理中"
+		},
+		"ViewRMA":{
+			"Title": "查看申请的详细信息"
+		},
+		"ResellerFeedback":{
+			"Title": "经销商反馈"
+		},
+		"Validation":{
+
+		},
+		"BackLink": "返回"
+	}
+}

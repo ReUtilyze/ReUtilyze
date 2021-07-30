@@ -1,0 +1,335 @@
+<form class="row my-3 future-recycle-request" [formGroup]="recycleRequestForm" (submit)="onSubmit()">
+    <div class="col-md-4 recycle-step d-none float-start p-2 device-info" *ngIf="selectDeviceDetails" [class.active]="currentId > 0">
+        <div class="m-3">
+            <div class="row device-image mb-3">
+                <div class="col text-center">
+                    <img class="w-50" [src]="selectDeviceDetails.Model.ModelImageName"/>
+                </div>
+            </div>
+            <div class="row device-title mb-3">
+                <div class="col text-start">
+                    <h4>{{selectDeviceDetails.Model.ModelName}}</h4>
+                </div>
+            </div>
+            <div class="row device-specs mb-3">
+                <div class="col-md-12 py-3">
+                    <div class="float-start">Processor</div><div class="float-end">{{selectDeviceDetails.Processor}}</div>
+                </div>
+                <hr class="m-0">
+                <div class="col-md-12 py-3">
+                    <div class="float-start">RAM</div><div class="float-end">{{selectDeviceDetails.RAM}}</div>
+                </div>
+                <hr class="m-0">
+                <div class="col-md-12 py-3">
+                    <div class="float-start">Storage</div><div class="float-end">{{selectDeviceDetails.Storage}}</div>
+                </div>
+                <hr class="m-0">
+                <div class="col-md-12 py-3">
+                    <div class="float-start">Battery Capacity</div><div class="float-end">{{selectDeviceDetails.BatteryCapacity}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8 recycle-step d-none recycle-form float-end p-2" *ngIf="selectDeviceDetails" [class.active]="currentId > 0">
+        <div class="row m-3 recycle-form-container">
+            <div class="col recycle-step d-none" [class.active]="currentId == 1">
+                <div class="row">
+                    <div class="col float-start">
+                        <h5>Device Variant</h5>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-3 float-start">
+                        <div class="form-group">
+                            <label for="category" class="mb-2">Category:</label>
+                            <div class="mb-2 category-value">{{selectDeviceDetails.Model.Brand.Category.CategoryName}}</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 float-start">
+                        <div class="form-group">
+                            <label for="brand" class="mb-2">Brand:</label>
+                            <div class="mb-2 brand-value">{{selectDeviceDetails.Model.Brand.BrandName}}</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 float-start">
+                        <div class="form-group">
+                            <label for="model" class="mb-2">Model:</label>
+                            <div class="mb-2 model-value">{{selectDeviceDetails.Model.ModelName}}</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 float-start">
+                        <div class="form-group">
+                            <label for="variant" class="mb-2">Variant:</label>
+                            <div class="mb-2 variant-value">{{selectDeviceDetails.VarientName}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col float-start">
+                        <h5>Damage Details</h5>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                <!-- <div class="row mb-3">     -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="accessoriesLabel" class="mb-2">Accessories:</label>
+                            <ng-multiselect-dropdown
+                                [settings]="multiSelectDropdownSettings"
+                                [data]="accessoriesDropdownList"
+                                (onSelect)="onAccessorySelect($event)"
+                                (onDeSelect)="onAccessoryDeSelect($event)"
+                                class="defect-select"
+                                [class.single-select]="multiSelectDropdownSettings.singleSelection"
+                                [class.multi-select]="!multiSelectDropdownSettings.singleSelection"
+                                formControlName="accessories"
+                            >
+                            </ng-multiselect-dropdown>
+                            <ul *ngFor="let accessories of recycleRequestForm.value.accessories">
+                                <li>{{accessories.description}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="glassDefectsLabel" class="mb-2">Glass Defects:</label>
+                            <ng-multiselect-dropdown
+                                [settings]="singleSelectDropdownSettings"
+                                [data]="glassDefectsDropdownList"
+                                (onSelect)="onGlassDefectsSelect($event)"
+                                (onDeSelect)="onGlassDefectsDeSelect($event)"
+                                class="defect-select"
+                                [class.single-select]="singleSelectDropdownSettings.singleSelection"
+                                [class.multi-select]="!singleSelectDropdownSettings.singleSelection"
+                                formControlName="glassDefects"
+                            >
+                            </ng-multiselect-dropdown>
+                            <ul *ngFor="let glassDefects of recycleRequestForm.value.glassDefects">
+                                <li>{{glassDefects.description}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="displayDefectsLabel" class="mb-2">Display Defects:</label>
+                            <ng-multiselect-dropdown
+                                [settings]="singleSelectDropdownSettings"
+                                [data]="displayDefectsDropdownList"
+                                (onSelect)="onDisplayDefectsSelect($event)"
+                                (onDeSelect)="onDisplayDefectDeSelect($event)"
+                                class="defect-select"
+                                [class.single-select]="singleSelectDropdownSettings.singleSelection"
+                                [class.multi-select]="!singleSelectDropdownSettings.singleSelection"
+                                formControlName="displayDefects"
+                            >
+                            </ng-multiselect-dropdown>
+                            <ul *ngFor="let displayDefects of recycleRequestForm.value.displayDefects">
+                                <li>{{displayDefects.description}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="bodyDefectsLabel" class="mb-2">Body Defects:</label>
+                            <ng-multiselect-dropdown
+                                [settings]="singleSelectDropdownSettings"
+                                [data]="bodyDefectsDropdownList"
+                                (onSelect)="onBodyDefectsSelect($event)"
+                                (onDeSelect)="onBodyDefectDeSelect($event)"
+                                class="defect-select"
+                                [class.single-select]="singleSelectDropdownSettings.singleSelection"
+                                [class.multi-select]="!singleSelectDropdownSettings.singleSelection"
+                                formControlName="bodyDefects"
+                            >
+                            </ng-multiselect-dropdown>
+                            <ul *ngFor="let bodyDefects of recycleRequestForm.value.bodyDefects">
+                                <li>{{bodyDefects.description}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="faultsLabel" class="mb-2">Faults:</label>
+                            <ng-multiselect-dropdown
+                                [settings]="multiSelectDropdownSettings"
+                                [data]="faultsDropdownList"
+                                (onSelect)="onFaultsSelect($event)"
+                                (onDeSelect)="onFaultsDeSelect($event)"
+                                class="defect-select"
+                                [class.single-select]="multiSelectDropdownSettings.singleSelection"
+                                [class.multi-select]="!multiSelectDropdownSettings.singleSelection"
+                                formControlName="faultsDropdown"
+                            >
+                            </ng-multiselect-dropdown>
+                            <ul *ngFor="let fault of recycleRequestForm.value.faultsDropdown">
+                                <li>{{fault.description}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col recycle-step d-none" [class.active]="currentId == 2">
+                <div class="row">
+                    <div class="col float-start">
+                        <h5>Upload Documents</h5>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6 float-start">
+                        <div class="form-group">
+                            <label for="contactName" class="mb-2">Upload Images:*</label>
+                            <input type="file" name="file" formControlName="file" (change)="onFileChange($event)"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col float-start">
+                        <h5>Contact Information</h5>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6 float-start">
+                        <div class="form-group">
+                            <label for="shipmentType" class="mb-2">Shipment Type:*</label>
+                            <div  class="d-flex mb-4">
+                                <div class="shipment-selection-box shipment-pickup mr-2 text-center" [class.checked]="shipmentTypeSelected == 'PickUp'" (click)="onSelectShipmentType('PickUp')">
+                                    <div class="shipment-icon">
+                                        <i class="bi bi-truck"></i>
+                                    </div>
+                                    <input type="radio" class="d-none" name="shipmentType" [checked]="shipmentTypeSelected == 'PickUp'"/>
+                                    <div class="shipment-label">
+                                        Pickup
+                                    </div>
+                                </div>
+                                <div class="shipment-selection-box shipment-drop mx-2 text-center" [class.checked]="shipmentTypeSelected == 'Drop'">
+                                    <div class="shipment-icon">
+                                        <i class="bi bi-shop-window"></i>
+                                    </div>
+                                    <input type="radio" class="d-none" name="shipmentType" [checked]="shipmentTypeSelected == 'Drop'"/>
+                                    <div class="shipment-label">
+                                        Drop
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 float-start" *ngIf="shipmentTypeSelected == 'Drop'">
+                        <div class="form-group">
+                            <label for="pincode" class="mb-2">Pincode:*</label>
+                            <input type="text" class="form-control" (blur)="onPincodeBlur()"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6 float-start">
+                        <div class="form-group">
+                            <label for="firstName" class="mb-2">First Name:*</label>
+                            <input type="text" class="form-control" formControlName="firstName"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6 float-start">
+                        <div class="form-group">
+                            <label for="lastName" class="mb-2">Last Name:*</label>
+                            <input type="text" class="form-control" formControlName="lastName"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6 float-start">
+                        <div class="form-group">
+                            <label for="email" class="mb-2">Email:*</label>
+                            <input type="text" class="form-control" formControlName="userEmailId"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6 float-start">
+                        <div class="form-group">
+                            <label for="mobile" class="mb-2">Mobile:*</label>
+                            <input type="text" class="form-control" formControlName="mobile"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3" *ngIf="showAddress && shipmentTypeSelected == 'Drop'">
+                    <div class="col float-start">
+                        <div class="form-group">
+                            <label for="drop" class="mb-2">Drop off at:</label>
+                            <div class="drop-off-address">
+                                <h5>Ingram Micro India Shared Services Centre Private Limited</h5>
+                                <p>2nd Floor, G-2, Akruti Corporate Park, Lal Bahadur Shastri Marg, Ambedkar Nagar, Kanjurmarg West, Bhandup West, Mumbai, Maharashtra 400078</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pickup-address" *ngIf="shipmentTypeSelected == 'PickUp'">
+                    <div class="row mb-3">
+                        <div class="col-md-6 float-start">
+                            <div class="form-group">
+                                <label for="add1" class="mb-2">Address Line 1:*</label>
+                                <input type="text" class="form-control" formControlName="add1"/>
+                            </div>
+                        </div>
+                        <div class="col-md-6 float-start">
+                            <div class="form-group">
+                                <label for="add2" class="mb-2">Address Line 2:*</label>
+                                <input type="text" class="form-control" formControlName="add2"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6 float-start">
+                            <div class="form-group">
+                                <label for="pincode" class="mb-2">Pincode:*</label>
+                                <input type="text" class="form-control" formControlName="pincode"/>
+                            </div>
+                        </div>
+                        <div class="col-md-6 float-start">
+                            <div class="form-group">
+                                <label for="city" class="mb-2">City:*</label>
+                                <input type="text" class="form-control" formControlName="city"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6 float-start">
+                            <div class="form-group">
+                                <label for="state" class="mb-2">State:*</label>
+                                <input type="text" class="form-control" formControlName="state"/>
+                            </div>
+                        </div>
+                        <div class="col-md-6 float-start">
+                            <div class="form-group">
+                                <label for="country" class="mb-2">Country:*</label>
+                                <input type="text" class="form-control" formControlName="country"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-3 recycle-form-buttons">
+            <div class="col-md-4">
+                <button type ="button" class="btn btn-secondary float-start" (click)="onPrevious(currentId)">Back</button>
+            </div>
+            <div class="col-md-4 text-center" *ngIf="selectDeviceDetails">
+                <span class="tentativePoints">{{tentativeRecycleValue | number}}</span><span class="mx-2">points*</span>
+            </div>
+            <div class="col-md-4">
+                <button type ="button" class="btn btn-primary float-end" (click)="onNext(currentId)" *ngIf="currentId != totalSteps" [disabled]="!recycleRequestForm.value.accessories || !recycleRequestForm.value.glassDefects || !recycleRequestForm.value.displayDefects  || !recycleRequestForm.value.bodyDefects || !recycleRequestForm.value.faultsDropdown">Proceed</button>
+                <button type ="submit" class="btn btn-primary float-end" *ngIf="currentId == totalSteps" [disabled]="!recycleRequestForm.valid">Submit</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row m-3 asterisk-content">
+        <span class="text-end">* You will receive the above mentioned points if your device is in working condition with no defects.</span>
+    </div>
+</form>
+
+<!-- <pre>{{recycleRequestForm.value | json}}</pre> -->

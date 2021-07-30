@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light bg-primary erma-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="['/']"><img src="./assets/logo.png" class="erma-logo"/></a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" *ngIf="authService.isLoggedIn()">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown mr-5">
+          <a class="nav-link dropdown-toggle" [ngClass]="status ? 'show' : ''" (click)="clickEvent($event)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i #toggleButton class="bi bi-person-fill"></i>
+          </a>
+          <ul #menu class="dropdown-menu dropdown-menu-right shadow text-left pull-left" dir="ltr" [ngClass]="status ? 'show' : ''" aria-labelledby="navbarDropdown">
+            <li class="px-4 py-2 text-white d-none d-xl-block dropdown-nav-title">
+              <span class="title-icon"><i class="bi bi-person-fill"></i></span>
+              <span class="title-text">{{authService.currentUser.FullName}}</span>
+            </li>
+            <!-- <li class="px-4 py-3 text-white d-none d-xl-block"><span>{{authService.currentUser.Name}}</span></li> -->
+            <!-- <li class="px-4 py-3 text-white d-none d-xl-block"><span>{{authService.currentUser.email}}</span></li> -->
+            <li class="px-4 py-2 text-white d-none d-xl-block"><a class="nav-link p-0 w-100" routerLink="web/customer/profile">My Requests</a></li>
+            <li class="px-4 py-2 text-white d-none d-xl-block"><a class="nav-link p-0 w-100" (click)="logout($event)">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

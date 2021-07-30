@@ -1,0 +1,485 @@
+{
+    "Categorys": [
+        {
+            "Id": 1,
+            "CategoryName": "Mobile",
+            "CategoryImageName": "\\mobile.png"
+        },
+        {
+            "Id": 2,
+            "CategoryName": "Laptop",
+            "CategoryImageName": "\\laptop.png"
+        },
+        {
+            "Id": 3,
+            "CategoryName": "Tablet",
+            "CategoryImageName": "\\Tablet.png"
+        }
+    ],
+
+    "Brands": [
+        {
+            "Id": 1,
+            "BrandName": "Apple",
+            "CategoryId": 1,
+            "BrandImageName": "\\Apple.png"
+        },
+        {
+            "Id": 2,
+            "BrandName": "OnePlus",
+            "CategoryId": 1,
+            "BrandImageName": "\\OnePlus.png"
+        },
+        {
+            "Id": 3,
+            "BrandName": "RedMi",
+            "CategoryId": 1,
+            "BrandImageName": "\\Redmi.png"
+        },
+        {
+            "Id": 4,
+            "BrandName": "Dell",
+            "CategoryId": 2,
+            "BrandImageName": "\\Dell.png"
+        }
+    ],
+    "BrandModels": [
+        {
+            "Id": 1,
+            "ModelName": "iPhone XS",
+            "ModelImageName": "\\iPhoneXS.png",
+            "BrandId": 1,
+            "Brand": "Apple",
+            "CategoryId": 1,
+            "Category": "Mobile"
+        },
+        {
+            "Id": 2,
+            "ModelName": "iPhone 7 Plus",
+            "ModelImageName": "\\iPhone7Plus.png",
+            "BrandId": 1,
+            "Brand": "Apple",
+            "CategoryId": 1,
+            "Category": "Mobile"
+
+        },
+        {
+            "Id": 3,
+            "ModelName": "iPhone 5",
+            "ModelImageName": "\\iPhone5.png",
+            "BrandId": 1,
+            "Brand": "Apple",
+            "CategoryId": 1,
+            "Category": "Mobile"
+
+        },
+        {
+            "Id": 4,
+            "ModelName": "One Plus 9",
+            "ModelImageName": "\\OnePlus9.png",
+            "BrandId": 2,
+            "Brand": "OnePlus",
+            "CatgoryID": 1,
+            "Category": "Mobile"
+
+        },
+        {
+            "Id": 5,
+            "ModelName": "OnePlus 7T Pro",
+            "ModelImageName": "\\OnePlus7TPro.png",
+            "BrandId": 2,
+            "Brand": "OnePlus",
+            "CatgoryID": 1,
+            "Category": "Mobile"
+
+        },
+        {
+            "Id": 6,
+            "ModelName": "OnePlus 8 Pro",
+            "ModelImageName": "\\OnePlus8Pro.png",
+            "BrandId": 2,
+            "Brand": "OnePlus",
+            "CatgoryID": 1,
+            "Category": "Mobile"
+
+        },
+        {
+            "Id": 7,
+            "ModelName": "Redmi Note 9 Pro",
+            "ModelImageName": "\\Redmi Note9Pro.png",
+            "BrandId": 3,
+            "Brand": "RedMi",
+            "CatgoryID": 1,
+            "Category": "Mobile"
+
+        },
+        {
+            "Id": 8,
+            "ModelName": "Redmi Note 10S",
+            "ModelImageName": "\\RedmiNote10S.png",
+            "BrandId": 3,
+            "Brand": "RedMi",
+            "CatgoryID": 1,
+            "Category": "Mobile"
+
+        }
+    ],
+    "ModelVarient": [
+        {
+            "Id": 1,
+            "VarientName": "4GB/64GB",
+            "BrandModelId": 1,
+            "Brand": "iPhone XS",
+            "Processor": "Apple A12 Bionic",
+            "RAM": "4GB",
+            "Storage": "64GB",
+            "BatteryCapacity": "2658 mAh",
+            "Camera": "10MP",
+            "VPN": "AP001",
+            "MaxRecycleValue": 1000
+        },
+        {
+            "Id": 2,
+            "VarientName": "4GB/256GB",
+            "BrandModelId": 1,
+            "Brand": "iPhone XS",
+            "Processor": "Apple A12 Bionic",
+            "RAM": "4GB",
+            "Storage": "256GB",
+            "BatteryCapacity": "2658 mAh",
+            "Camera": "12MP",
+            "VPN": "AP002",
+            "MaxRecycleValue": 1200
+        },
+        {
+            "Id": 3,
+            "VarientName": "4GB/512GB",
+            "BrandModelId": 1,
+            "Brand": "iPhone XS",
+            "Processor": "Apple A12 Bionic",
+            "RAM": "4GB",
+            "Storage": "512GB",
+            "BatteryCapacity": "2658 mAh",
+            "Camera": "14MP",
+            "VPN": "AP003",
+            "MaxRecycleValue": 1400
+        },
+        {
+            "Id": 4,
+            "VarientName": " 3GB/32GB",
+            "BrandModelId": 1,
+            "Brand": "Apple iPhone 7 Plus",
+            "Processor": "Apple A10 Fusion",
+            "RAM": "3GB",
+            "Storage": "32GB",
+            "BatteryCapacity": "2900 mAh",
+            "Camera": "14MP",
+            "VPN": "AP004",
+            "MaxRecycleValue": 1600
+        },
+        {
+            "Id": 5,
+            "VarientName": "8GB/12GB",
+            "BrandModelId": 4,
+            "Brand": "One Plus 9",
+            "Processor": "Qualcomm Snapdragon 888",
+            "RAM": "8GB",
+            "Storage": "128GB",
+            "BatteryCapacity": "4500 mAh",
+            "Camera": "10MP",
+            "VPN": "ON001",
+            "MaxRecycleValue": 1400
+        },
+        {
+            "Id": 6,
+            "VarientName": "12GB/256GB",
+            "BrandModelId": 4,
+            "Brand": "One Plus 9",
+            "Processor": "Qualcomm Snapdragon 888",
+            "RAM": "12GB",
+            "Storage": "256GB",
+            "BatteryCapacity": "4500 mAh",
+            "Camera": "12MP",
+            "VPN": "ON002",
+            "MaxRecycleValue": 1500
+        },
+        {
+            "Id": 7,
+            "VarientName": "6GB/128GB",
+            "BrandModelId": 5,
+            "Brand": "Redmi Note 9 Pro",
+            "Processor": "Qualcomm Snapdragon 720G",
+            "RAM": "6GB",
+            "Storage": "128GB",
+            "BatteryCapacity": "5020 mAh",
+            "Camera": "10MP",
+            "VPN": "RD001",
+            "MaxRecycleValue": 900
+        },
+        {
+            "Id": 8,
+            "VarientName": "4GB/64GB",
+            "BrandModelId": 7,
+            "Brand": "Redmi Note 9 Pro",
+            "Processor": "Qualcomm Snapdragon 720G",
+            "RAM": "4GB",
+            "Storage": "64GB",
+            "BatteryCapacity": "5020 mAh",
+            "Camera": "8MP",
+            "VPN": "RD02",
+            "MaxRecycleValue": 700
+        },
+        {
+            "Id": 9,
+            "VarientName": "4GB/128GB",
+            "BrandModelId": 7,
+            "Brand": "Redmi Note 9 Pro",
+            "Processor": "Qualcomm Snapdragon 720G",
+            "RAM": "4GB",
+            "Storage": "128GB",
+            "BatteryCapacity": "5020 mAh",
+            "Camera": "8MP",
+            "VPN": "RD03",
+            "MaxRecycleValue": 1000
+        },
+        {
+            "Id": 10,
+            "VarientName": "6GB/64GB",
+            "BrandModelId": 8,
+            "Brand": "Redmi Note 10S",
+            "Processor": "MediaTek Helio G95",
+            "RAM": "6GB",
+            "Storage": "648GB",
+            "BatteryCapacity": "5000 mAh",
+            "Camera": "10MP",
+            "VPN": "RD04",
+            "MaxRecycleValue": 750
+        }
+
+    ],
+    "Defect": [
+        {
+            "Id": 1,
+            "DefectTitle": "Accessories",
+            "DefectDescriptionn": "Please select available accessories",
+            "DisplaySequence": 1,
+            "IsRequired": "No",
+            "IsMultiSelected": "Yes",
+            "IsActive": "Yes",
+            "BrandModelId": 1,
+            "BrandModel": "iPhone XS"
+        },
+        {
+            "Id": 2,
+            "DefectTitle": "Glass Defects",
+            "DefectDescriptionn": "Please select all applicable glass defects",
+            "DisplaySequence": 2,
+            "IsRequired": "Yes",
+            "IsMultiSelected": "No",
+            "IsActive": "Yes",
+            "BrandModelId": 1,
+            "BrandModel": "iPhone XS"
+        },
+        {
+            "Id": 3,
+            "DefectTitle": "Display Defects",
+            "DefectDescriptionn": "Please select all applicable display defects",
+            "DisplaySequence": 3,
+            "IsRequired": "Yes",
+            "IsMultiSelected": "No",
+            "IsActive": "Yes",
+            "BrandModelId": 1,
+            "BrandModel": "iPhone XS"
+        },
+        {
+            "Id": 4,
+            "DefectTitle": "Body Defects",
+            "DefectDescriptionn": "Please select all applicable body defects",
+            "DisplaySequence": 4,
+            "IsRequired": "Yes",
+            "IsMultiSelected": "No",
+            "IsActive": "Yes",
+            "BrandModelId": 1,
+            "BrandModel": "iPhone XS"
+        },
+        {
+            "Id": 5,
+            "DefectTitle": "Faults",
+            "DefectDescriptionn": "Please select all applicable functional fault(s)",
+            "DisplaySequence": 5,
+            "IsRequired": "No",
+            "IsMultiSelected": "Yes",
+            "IsActive": "Yes",
+            "BrandModelId": 1,
+            "BrandModel": "iPhone XS"
+        }
+    ],
+    "DefectDetail": [
+        {
+            "Id": 1,
+            "DefectId": 1,
+            "Defect": "Original Box with same IMEI / Serial No",
+            "Descriptionn": "",
+            "ImageName": "\\OriginalBox.png",
+            "DisplaySequence": 1,
+            "RecycleValue": 100
+        },
+        {
+            "Id": 2,
+            "DefectId": 1,
+            "Defect": "Original Charger",
+            "Descriptionn": "",
+            "ImageName": "\\OriginalCharger.png",
+            "DisplaySequence": 2,
+            "RecycleValue": 100
+        },
+        {
+            "Id": 3,
+            "DefectId": 1,
+            "Defect": "Valid Bill with same IMEI / Serial No",
+            "Descriptionn": "",
+            "ImageName": "\\ValidBill.png",
+            "DisplaySequence": 3,
+            "RecycleValue": 100
+        },
+        {
+            "Id": 4,
+            "DefectId": 2,
+            "Defect": "No Defect",
+            "Descriptionn": "",
+            "ImageName": "\\NoDefect.png",
+            "DisplaySequence": 1,
+            "RecycleValue": 0
+        },
+        {
+            "Id": 5,
+            "DefectId": 2,
+            "Defect": "Scratches",
+            "Descriptionn": "",
+            "ImageName": "\\Scratches.png",
+            "DisplaySequence": 2,
+            "RecycleValue": -100
+        },
+
+        {
+            "Id": 6,
+            "DefectId": 2,
+            "Defect": "Front Glass Broken or Cracked",
+            "Descriptionn": "",
+            "ImageName": "\\FrontGlassCracked.png",
+            "DisplaySequence": 4,
+            "RecycleValue": -100
+        },
+        {
+            "Id": 7,
+            "DefectId": 2,
+            "Defect": "Back Glass Broken or Cracked",
+            "Descriptionn": "",
+            "ImageName": "\\BackGlassCracked.png",
+            "DisplaySequence": 4,
+            "RecycleValue": -100
+        },
+        {
+            "Id": 8,
+            "DefectId": 2,
+            "Defect": "Both Glass Broken or Cracked",
+            "Descriptionn": "",
+            "ImageName": "\\bothGlassCracked.png",
+            "DisplaySequence": 4,
+            "RecycleValue": -200
+        },
+        {
+            "Id": 9,
+            "DefectId": 3,
+            "Defect": "No Defect",
+            "Descriptionn": "",
+            "ImageName": "\\ddNoDefect.png",
+            "DisplaySequence": 1,
+            "RecycleValue": 0
+        },
+        {
+            "Id": 10,
+            "DefectId": 3,
+            "Defect": "Minor Spots",
+            "Descriptionn": "Visible but minor white, black or yellow spots",
+            "ImageName": "\\MinorSpots.png",
+            "DisplaySequence": 2,
+            "RecycleValue": -100
+        },
+        {
+            "Id": 11,
+            "DefectId": 3,
+            "Defect": "Minor Lines",
+            "Descriptionn": "Visible but minor lines, yellow shading",
+            "ImageName": "\\MinorLines.png",
+            "DisplaySequence": 3,
+            "RecycleValue": -100
+        },
+        {
+            "Id": 12,
+            "DefectId": 3,
+            "Defect": "Broken or Cracked",
+            "Descriptionn": "",
+            "ImageName": "\\BrokenCracked.png",
+            "DisplaySequence": 4,
+            "RecycleValue": -100
+        },
+        {
+            "Id": 13,
+            "DefectId": 3,
+            "Defect": "Major Touch Fault",
+            "Descriptionn": "Touch not working or heavy spots / lines",
+            "ImageName": "\\MajorTouchFault.png",
+            "DisplaySequence": 5,
+            "RecycleValue": -200
+        },
+        {
+            "Id": 14,
+            "DefectId": 4,
+            "Defect": "No Defect",
+            "Descriptionn": "Flawless, Out of Box condition",
+            "ImageName": "\\FlawlessOutofBox.png",
+            "DisplaySequence": 1,
+            "RecycleValue": 0
+        },
+        {
+            "Id": 15,
+            "DefectId": 4,
+            "Defect": "Scratches or Dents",
+            "Descriptionn": "Less Than 2 Scratches or Dents",
+            "ImageName": "\\FlawlessOutofBox.png",
+            "DisplaySequence": 2,
+            "RecycleValue": -100
+        },
+        {
+            "Id": 16,
+            "DefectId": 4,
+            "Defect": "Scratches and Discolor",
+            "Descriptionn": "Heavy Scratches and Discolor (Body needs replacement)",
+            "ImageName": "\\ScratchesDiscolor.png",
+            "DisplaySequence": 3,
+            "RecycleValue": -150
+        },
+        {
+            "Id": 16,
+            "DefectId": 5,
+            "Defect": "Dents and Cracked ",
+            "Descriptionn": "Heavy Dents and Cracked (Body needs replacement)",
+            "ImageName": "\\DentsCracked.png",
+            "DisplaySequence": 4,
+            "RecycleValue": -150
+        },
+        {
+            "Id": 17,
+            "DefectId": 5,
+            "Defect": "Body Bend or Deform",
+            "Descriptionn": "Gap between display and body",
+            "ImageName": "\\BodyBendDeform.png",
+            "DisplaySequence": 5,
+            "RecycleValue": -200
+        }
+
+    ]
+
+
+}

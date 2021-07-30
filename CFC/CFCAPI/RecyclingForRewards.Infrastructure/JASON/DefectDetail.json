@@ -1,0 +1,168 @@
+﻿{
+    "DefectDetail": [
+            {
+                "Id": 1,
+                "DefectId": 1,
+                "Defect": "Original Box with same IMEI / Serial No",
+                "Descriptionn": "",
+                "ImageName": "\\OriginalBox.png",
+                "DisplaySequence": 1,
+                "RecycleValue": 100
+            },
+            {
+                "Id": 2,
+                "DefectId": 1,
+                "Defect": "Original Charger",
+                "Descriptionn": "",
+                "ImageName": "\\OriginalCharger.png",
+                "DisplaySequence": 2,
+                "RecycleValue": 100
+            },
+            {
+                "Id": 3,
+                "DefectId": 1,
+                "Defect": "Valid Bill with same IMEI / Serial No",
+                "Descriptionn": "",
+                "ImageName": "\\ValidBill.png",
+                "DisplaySequence": 3,
+                "RecycleValue": 100
+            },
+            {
+                "Id": 4,
+                "DefectId": 2,
+                "Defect": "No Defect",
+                "Descriptionn": "",
+                "ImageName": "\\NoDefect.png",
+                "DisplaySequence": 1,
+                "RecycleValue": 0
+            },
+            {
+                "Id": 5,
+                "DefectId": 2,
+                "Defect": "Scratches",
+                "Descriptionn": "",
+                "ImageName": "\\Scratches.png",
+                "DisplaySequence": 2,
+                "RecycleValue": -100
+            },
+
+            {
+                "Id": 6,
+                "DefectId": 2,
+                "Defect": "Front Glass Broken or Cracked",
+                "Descriptionn": "",
+                "ImageName": "\\FrontGlassCracked.png",
+                "DisplaySequence": 4,
+                "RecycleValue": -100
+            },
+            {
+                "Id": 7,
+                "DefectId": 2,
+                "Defect": "Back Glass Broken or Cracked",
+                "Descriptionn": "",
+                "ImageName": "\\BackGlassCracked.png",
+                "DisplaySequence": 4,
+                "RecycleValue": -100
+            },
+            {
+                "Id": 8,
+                "DefectId": 2,
+                "Defect": "Both Glass Broken or Cracked",
+                "Descriptionn": "",
+                "ImageName": "\\bothGlassCracked.png",
+                "DisplaySequence": 4,
+                "RecycleValue": -200
+            },
+            {
+                "Id": 9,
+                "DefectId": 3,
+                "Defect": "No Defect",
+                "Descriptionn": "",
+                "ImageName": "\\ddNoDefect.png",
+                "DisplaySequence": 1,
+                "RecycleValue": 0
+            },
+            {
+                "Id": 10,
+                "DefectId": 3,
+                "Defect": "Minor Spots",
+                "Descriptionn": "Visible but minor white, black or yellow spots",
+                "ImageName": "\\MinorSpots.png",
+                "DisplaySequence": 2,
+                "RecycleValue": -100
+            },
+            {
+                "Id": 11,
+                "DefectId": 3,
+                "Defect": "Minor Lines",
+                "Descriptionn": "Visible but minor lines, yellow shading",
+                "ImageName": "\\MinorLines.png",
+                "DisplaySequence": 3,
+                "RecycleValue": -100
+            },
+            {
+                "Id": 12,
+                "DefectId": 3,
+                "Defect": "Broken or Cracked",
+                "Descriptionn": "",
+                "ImageName": "\\BrokenCracked.png",
+                "DisplaySequence": 4,
+                "RecycleValue": -100
+            },
+            {
+                "Id": 13,
+                "DefectId": 3,
+                "Defect": "Major Touch Fault",
+                "Descriptionn": "Touch not working or heavy spots / lines",
+                "ImageName": "\\MajorTouchFault.png",
+                "DisplaySequence": 5,
+                "RecycleValue": -200
+            },
+            {
+                "Id": 14,
+                "DefectId": 4,
+                "Defect": "No Defect",
+                "Descriptionn": "Flawless, Out of Box condition",
+                "ImageName": "\\FlawlessOutofBox.png",
+                "DisplaySequence": 1,
+                "RecycleValue": 0
+            },
+            {
+                "Id": 15,
+                "DefectId": 4,
+                "Defect": "Scratches or Dents",
+                "Descriptionn": "Less Than 2 Scratches or Dents",
+                "ImageName": "\\FlawlessOutofBox.png",
+                "DisplaySequence": 2,
+                "RecycleValue": -100
+            },
+            {
+                "Id": 16,
+                "DefectId": 4,
+                "Defect": "Scratches and Discolor",
+                "Descriptionn": "Heavy Scratches and Discolor (Body needs replacement)",
+                "ImageName": "\\ScratchesDiscolor.png",
+                "DisplaySequence": 3,
+                "RecycleValue": -150
+            },
+            {
+                "Id": 16,
+                "DefectId": 5,
+                "Defect": "Dents and Cracked ",
+                "Descriptionn": "Heavy Dents and Cracked (Body needs replacement)",
+                "ImageName": "\\DentsCracked.png",
+                "DisplaySequence": 4,
+                "RecycleValue": -150
+            },
+            {
+                "Id": 17,
+                "DefectId": 5,
+                "Defect": "Body Bend or Deform",
+                "Descriptionn": "Gap between display and body",
+                "ImageName": "\\BodyBendDeform.png",
+                "DisplaySequence": 5,
+                "RecycleValue": -200
+            }
+        
+    ]
+}

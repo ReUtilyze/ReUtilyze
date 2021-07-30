@@ -1,0 +1,91 @@
+[
+  {
+    "item_id": 5475,
+    "serial_no": "2030LZ020ZHM006",
+    "request_id": "1498",
+    "sku": "241F038",
+    "vpn": "910-005781",
+    "vendor_code": "2425",
+    "product_line": "LOGITECH",
+    "sales_date": "2020-08-20",
+    "sales_order": "3068405",
+    "product_desc": "PEBBLEINE FRIENDS COLLECTIO",
+    "damage_info": "",
+    "is_input": "False",
+    "guid": "",
+    "file_name": "",
+    "file_type": ""
+  },
+  
+  {
+    "item_id": 5476,
+    "serial_no": "2031LZ00CZRM006",
+    "request_id": "1498",
+    "sku": "241F038",
+    "vpn": "910-005781",
+    "vendor_code": "2425",
+    "product_line": "LOGITECH",
+    "sales_date": "2020-08-20",
+    "sales_order": "3068405",
+    "product_desc": "PEBBLEINE FRIENDS COLLECTIO",
+    "damage_info": "",
+    "is_input": "False",
+    "guid": "",
+    "file_name": "",
+    "file_type": ""
+  },
+  
+  {
+    "item_id": 5477,
+    "serial_no": "2030LZ020ZJM001",
+    "request_id": "1498",
+    "sku": "241F038",
+    "vpn": "910-005781",
+    "vendor_code": "2425",
+    "product_line": "LOGITECH",
+    "sales_date": "2020-08-20",
+    "sales_order": "3068405",
+    "product_desc": "PEBBLEINE FRIENDS COLLECTIO",
+    "damage_info": "",
+    "is_input": "False",
+    "guid": "",
+    "file_name": "",
+    "file_type": ""
+  },
+  
+  {
+    "item_id": 5478,
+    "serial_no": "2030LZ020ZHM004",
+    "request_id": "1498",
+    "sku": "241F038",
+    "vpn": "910-005781",
+    "vendor_code": "2425",
+    "product_line": "LOGITECH",
+    "sales_date": "2020-08-20",
+    "sales_order": "3068405",
+    "product_desc": "PEBBLEINE FRIENDS COLLECTIO",
+    "damage_info": "",
+    "is_input": "False",
+    "guid": "",
+    "file_name": "",
+    "file_type": ""
+  },
+  
+  {
+    "item_id": 5479,
+    "serial_no": "2030LZ020ZHM010",
+    "request_id": "1498",
+    "sku": "241F038",
+    "vpn": "910-005781",
+    "vendor_code": "2425",
+    "product_line": "LOGITECH",
+    "sales_date": "2020-08-20",
+    "sales_order": "3068405",
+    "product_desc": "PEBBLEINE FRIENDS COLLECTIO",
+    "damage_info": "",
+    "is_input": "False",
+    "guid": "",
+    "file_name": "",
+    "file_type": ""
+  }
+  ]
