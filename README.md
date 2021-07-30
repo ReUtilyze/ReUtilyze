@@ -56,7 +56,7 @@ India is the only country in Southern Asia with e-waste legislation, with laws t
 
 ReUtilyze will help minimize the impact of electronic waste on the environment during the life span of the product and also when it becomes obsolete.
 
-![picture alt](https://cfcimages.blob.core.windows.net/reutilyze/roadmap.png)
+![picture alt](https://cfcimages.blob.core.windows.net/cfcimages/Recyle.png)
 
 ## Solution Architecture <a name="Solution-Architecture"></a>
 ![picture alt](https://cfcimages.blob.core.windows.net/cfcimages/Solution_Architecture.png)
