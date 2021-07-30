@@ -18,13 +18,14 @@ Recycling is vital as it reduces the need to harvest new raw materials, prevents
 02. [Demo Video](#Demo-Video)
 03. [How it works](#How-it-works)
 04. [Long Description](#Long-Description)
-05. [Innovation/Competition](#Innovation)
-06. [Project Roadmap](#Project-Roadmap)
-07. [Getting Started](#Getting-Started)
-08. [IBM Cloud Services](#IBM-Cloud-Services)
-09. [Deployment/Pilot](#Pilot)
-10. [Authors](#Authors)
-11. [License](#License)
+05. [Solution Architecture](#Solution-Architecture)
+6. [Innovation/Competition](#Innovation)
+7. [Project Roadmap](#Project-Roadmap)
+8. [Getting Started](#Getting-Started)
+9. [IBM Cloud Services](#IBM-Cloud-Services)
+10. [Deployment/Pilot](#Pilot)
+11. [Authors](#Authors)
+12. [License](#License)
 
 ## Short Description <a name="Short-Description"></a>
 
@@ -63,13 +64,11 @@ India is the only country in Southern Asia with e-waste legislation, with laws t
 
 ReUtilyze will help minimize the impact of electronic waste on the environment during the life span of the product and also when it becomes obsolete.
 
+## Solution Architecture <a name="Solution-Architecture"></a>
+
 ## Project Roadmap <a name="Project-Roadmap"></a>
 ![picture alt](https://cfcimages.blob.core.windows.net/cfcimages/roadmap.png)
-* For the 1st Phase, we focused on given farmers tools and knowledge to fight against changes in the weather.
-  We are testing with some of the Mongolian farmers to identify user interface opportunities.
-* The 2nd phase is planned to focus on the interactions between farmers so they can increase their relationship. This will enable them to know what others are planting and explore their options. We are also planning to integrate some tools so the farmers can leverage their know-how, such as the expert advice feature will allow farmers to get in touch with specialists and trends in the agriculture sector.
-We plan in this phase to deploy  APP testing in Brasil - Parana. We already have done some contacts with local authorities. 
-* Our 3rd goal is to connect small farmers with banks and customers, by implementing QR code for food traceability and farming credit score algorithms. We also plan to expand the risk mgm for deceases and market risks.
+
 
 ## Getting Started <a name="Getting-Started"></a>
 
