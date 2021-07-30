@@ -80,7 +80,7 @@ ReUtilyze will help minimize the impact of electronic waste on the environment d
 * Install node.js
 * Install Angular
  
-* Running the app:
+* Running the web application :
     01. To run the application on a local machine:<br />
         Follow below steps :
         
