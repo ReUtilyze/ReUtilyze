@@ -25,7 +25,7 @@ Recycling is vital as it reduces the need to harvest new raw materials, prevents
 09. [Getting Started](#Getting-Started)
 10. [IBM Cloud Services](#IBM-Cloud-Services)
 11. [Authors](#Authors)
-12. [License](#License)
+ 
 
 ## Short Description <a name="Short-Description"></a>
 
@@ -104,11 +104,6 @@ ReUtilyze will help minimize the impact of electronic waste on the environment d
  
 
 ## Authors <a name="Authors"></a>
-* Ajinkya Datalkar - Product & Sotware Developer, System Design [*See Linkedin*](https://www.linkedin.com/in/ajinkya-datalkar/)
-* Manoela Morais - Data Intelligence (R program) & Project Management [*See Linkedin*](https://www.linkedin.com/in/manoelamorais/)
-* Helen Tsai - Web Developer [*See Linkedin*](https://www.linkedin.com/in/helen-tsai-teyi/)
-* Chimka Munkhbayar - Mongolian Deployment [*See Linkedin*](https://www.linkedin.com/in/chimka-munkhbayar-0ab421b5/)
+ 
 
-## License <a name="License"></a>
-This project is licensed under the Apache 2 License - see the [ LICENSE ](https://github.com/ajinkyadatalkar1/ReUtilyze/blob/master/LICENSE) 
-for details.
+ 
