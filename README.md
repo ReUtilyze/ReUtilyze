@@ -68,20 +68,17 @@ ReUtilyze will help minimize the impact of electronic waste on the environment d
 
 #### Prerequisite
 * Install VS 2019    - Required to run Wep API Project [Download Link](https://visualstudio.microsoft.com/downloads/)  
-* * Install node.js    - Required for Angular
-* Visual Studio Code - Required to run the wep applicatioms.
-
-* Dowload Visual Studio 2019 from [Microsoft Visual Studio website](https://visualstudio.microsoft.com/downloads/)  
-* Dowload Visual Studio Code from [Microsoft Visual Studio website](https://code.visualstudio.com/)  
-* Download node.js from [node.js](https://nodejs.org/en/)
+* Install node.js    - Required for Angular [Download Link](https://nodejs.org/en/)
+* Visual Studio Code - Required to run single page applicatioms. [Download Link](https://visualstudio.microsoft.com/downloads/)
+* Register for an IBM Cloud account. [Website](https://www.ibm.com/account/us-en/)
 
 #### Run it
-* Download the Github code
+* Download the Github code for single page application and Web API Project.
 * Install node.js
 * Install Angular
  
 * Running the web application :
-    01. To run the application on a local machine:<br />
+    01. To run the single page application on a local machine:<br />
         Follow below steps :
         
         <code>npm install</code>
