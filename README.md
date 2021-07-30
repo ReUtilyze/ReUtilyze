@@ -20,11 +20,10 @@ Recycling is vital as it reduces the need to harvest new raw materials, prevents
 04. [Long Description](#Long-Description)
 05. [Solution Architecture](#Solution-Architecture)
 06. [Tech Stack Details](#Tech-Stack-Details)
-07. [Innovation/Competition](#Innovation)
-08. [Project Roadmap](#Project-Roadmap)
-09. [Getting Started](#Getting-Started)
-10. [IBM Cloud Services](#IBM-Cloud-Services)
-11. [Authors](#Authors)
+07. [Project Roadmap](#Project-Roadmap)
+08. [Getting Started](#Getting-Started)
+09. [IBM Cloud Services](#IBM-Cloud-Services)
+10. [Authors](#Authors)
  
 
 ## Short Description <a name="Short-Description"></a>
