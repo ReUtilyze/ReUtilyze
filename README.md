@@ -19,13 +19,14 @@ Recycling is vital as it reduces the need to harvest new raw materials, prevents
 03. [How it works](#How-it-works)
 04. [Long Description](#Long-Description)
 05. [Solution Architecture](#Solution-Architecture)
-6. [Innovation/Competition](#Innovation)
-7. [Project Roadmap](#Project-Roadmap)
-8. [Getting Started](#Getting-Started)
-9. [IBM Cloud Services](#IBM-Cloud-Services)
-10. [Deployment/Pilot](#Pilot)
-11. [Authors](#Authors)
-12. [License](#License)
+06. [Tech Stack Details](#Tech-Stack-Details)
+7. [Innovation/Competition](#Innovation)
+8. [Project Roadmap](#Project-Roadmap)
+9. [Getting Started](#Getting-Started)
+10. [IBM Cloud Services](#IBM-Cloud-Services)
+11. [Deployment/Pilot](#Pilot)
+12. [Authors](#Authors)
+13. [License](#License)
 
 ## Short Description <a name="Short-Description"></a>
 
@@ -69,6 +70,7 @@ ReUtilyze will help minimize the impact of electronic waste on the environment d
 ## Project Roadmap <a name="Project-Roadmap"></a>
 ![picture alt](https://cfcimages.blob.core.windows.net/cfcimages/roadmap.png)
 
+## Tech Stack Details <a name="Tech-Stack-Details"></a>
 
 ## Getting Started <a name="Getting-Started"></a>
 
