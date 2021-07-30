@@ -43,7 +43,6 @@ ReUtilyze will allow user to evaluate their old or waste electronic equipments, 
 ReUtilyze is built using .net Core 5, nosql DB (Mongo DB), Angular 11, Bootstrap 5, AWS Cloud Platform,  Azure Cloud Platform, IBM Cloud Platform, Visual Studio 2019 Community Version, GIT, Swagger.
 
 ## Long Description <a name="Long-Description"></a>
-[Long Description Document Link](https://github.com/ReUtilyze/ReUtilyze/blob/main/ReUtilyze.docx)
  
  India alone generates about 3 million tons (MT) of e-waste annually and ranks third among e-waste producing countries, after China and the United States. Reports state that it might rise to 5 million tons by 2021.
 
