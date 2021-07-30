@@ -64,7 +64,7 @@ India is the only country in Southern Asia with e-waste legislation, with laws t
 ReUtilyze will help minimize the impact of electronic waste on the environment during the life span of the product and also when it becomes obsolete.
 
 ## Project Roadmap <a name="Project-Roadmap"></a>
-![picture alt](https://cfcimages.blob.core.windows.net/reutilyze/roadmap.png)
+![picture alt](https://cfcimages.blob.core.windows.net/cfcimages/roadmap.png)
 * For the 1st Phase, we focused on given farmers tools and knowledge to fight against changes in the weather.
   We are testing with some of the Mongolian farmers to identify user interface opportunities.
 * The 2nd phase is planned to focus on the interactions between farmers so they can increase their relationship. This will enable them to know what others are planting and explore their options. We are also planning to integrate some tools so the farmers can leverage their know-how, such as the expert advice feature will allow farmers to get in touch with specialists and trends in the agriculture sector.
