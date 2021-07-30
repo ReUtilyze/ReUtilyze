@@ -64,7 +64,7 @@ ReUtilyze will help minimize the impact of electronic waste on the environment d
 
 ## Tech Stack Details <a name="Tech-Stack-Details"></a>
 
-1. .net core 5.0  : It is used for developing WEB API which will get consume inside the web applications which is developed for customer, back office users and vendors.
+1. .Net core 5.0  : It is used for developing WEB API which will get consume inside the web applications which is developed for customer, back office users and vendors.
 
 2. Angular 11 : It is used for developing single page application.
 
