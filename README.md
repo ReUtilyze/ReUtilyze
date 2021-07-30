@@ -75,12 +75,8 @@ ReUtilyze will help minimize the impact of electronic waste on the environment d
 #### Run it
 * Download the Github code for single page application and Web API Project.
 * Install node.js
-* Install Angular CLI using  <code>npm install -g @angular/cli</code>
-* Install.net framework 5.0
-* The API microservices makes use of below packages from NuGet all of which are required to be installed in order to compile the app or run on localhost
- *1. Microsoft.AspNetCore.Authentication.JwtBearer (https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer/5.0.8?_src=template)
- 2. https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.NewtonsoftJson/5.0.8?_src=template
- 3. 
+* Install Angular CLI at global using  <code>npm install -g @angular/cli</code>
+* Install .net SDK 5.0
 
  
 * Running the web application :
@@ -88,11 +84,15 @@ ReUtilyze will help minimize the impact of electronic waste on the environment d
 
      Open application folder path 
         Follow below steps :
-        
-        <code>npm install</code>
-        
+        1. Go to the application source code path and open WEBUI or BOUI folder in Visual Studio Code:
+        2. Open terminal in visual Studio code and install dependacies using below command : 
+         <code>npm install</code>
+        3. Once the dependancies are get installed, run the application using below command :
         <code>ng serve --o --ssl true</code>
- 
+        
+   02. To run the microservice Wep API application using visual studio  
+       1.Go to the application source code path (CFCAPI) and open solution file RecyclingForRewards.sln in Visual Studio.   
+       2.Go to the Debug menu and click on start debugging to run the application.
 
 
 ## IBM Cloud Services <a name="IBM-Cloud-Services"></a>
@@ -102,6 +102,15 @@ ReUtilyze will help minimize the impact of electronic waste on the environment d
  
 
 ## Authors <a name="Authors"></a>
+1. Amiya Padhi
+2. Vitthal Shinde
+3. Uma Shanker Pandey
+4. Manish Prasad
+5. Akash Chavan
+6. Annie Vaidya
+7. Rohit Nair
+8. Siddhesh Bhojane
+
  
 
  
