@@ -67,7 +67,7 @@ ReUtilyze will help minimize the impact of electronic waste on the environment d
 ## Getting Started <a name="Getting-Started"></a>
 
 #### Prerequisite
-* Install VS 2019    - Required to run Wep API Project
+* Install VS 2019    - Required to run Wep API Project [Download Link](https://visualstudio.microsoft.com/downloads/)  
 * * Install node.js    - Required for Angular
 * Visual Studio Code - Required to run the wep applicatioms.
 
