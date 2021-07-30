@@ -3,7 +3,6 @@
 
 _______________________________________________________________________________________________________________________________________________  
 
-Write your name on line 6, save it, and then head back to GitHub Desktop.
 ## What is ReUtilyze? ##
 Recycling is vital as it reduces the need to harvest new raw materials, prevents pollution, saves energy & money, reduces the amount of waste that ends up in the landfills and also allows products to be re-utilized at their maximum capacity.
 
