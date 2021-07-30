@@ -1,11 +1,6 @@
 
 # ReUtilyze #
 
-This is your README. READMEs are where you can communicate what your project is and how to use it.
-*Website: http://www.ReUtilyze.com*  
-*Linkedin: https://www.linkedin.com/company/ReUtilyze*  
-*Instagram: [@ReUtilyze.tech](https://www.instagram.com/ReUtilyze.tech/)*  
-*Contact: ReUtilyze.tech@outlook.com*    
 _______________________________________________________________________________________________________________________________________________  
 
 Write your name on line 6, save it, and then head back to GitHub Desktop.
