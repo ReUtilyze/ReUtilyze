@@ -64,6 +64,16 @@ ReUtilyze will help minimize the impact of electronic waste on the environment d
 
 ## Tech Stack Details <a name="Tech-Stack-Details"></a>
 
+1. .net core 5.0  : It is used for developing WEB API which will get consume inside the web applications which is developed for customer, back office users and vendors.
+
+2. Angular 11 : It is used for developing single page application.
+
+3. Mongo DB : ReUtilyze uses the Mongo DB  (no-SQL database) for storing the user and request related information.
+
+4. Azure Cloud Services : We have deployed the web API applications using the azure cloud services.
+
+5. git - For managing the source code and working multiple developers efficiently at same time. 
+
 ## Getting Started <a name="Getting-Started"></a>
 
 #### Prerequisite
