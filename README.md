@@ -74,20 +74,19 @@ ReUtilyze will help minimize the impact of electronic waste on the environment d
 ## Getting Started <a name="Getting-Started"></a>
 
 #### Prerequisite
-* Register for an [IBM Cloud account](https://www.ibm.com/account/reg/us-en/signup?formid=urx-42793&eventid=cfc-2020).
-* Request a [Weather Company API key](https://callforcode.weather.com/)
-* Dowload Forecast from [NASA webiste](https://power.larc.nasa.gov/data-access-viewer/) or use github library:
-``` nasapower ```
-* Read and select any forecast regression from the article provided.
+* Install VS 2019    - Required to run Wep API Project
+* * Install node.js    - Required for Angular
+* Visual Studio Code - Required to run the wep applicatioms.
+
+* Dowload Visual Studio 2019 from [Microsoft Visual Studio website](https://visualstudio.microsoft.com/downloads/)  
+* Dowload Visual Studio Code from [Microsoft Visual Studio website](https://code.visualstudio.com/)  
+* Download node.js from [node.js](https://nodejs.org/en/)
 
 #### Run it
 * Download the Github code
 * Install node.js
 * Install Angular
  
-
- 
-
 * Running the app:
     01. To run the application on a local machine:<br />
         Follow below steps :
@@ -97,9 +96,6 @@ ReUtilyze will help minimize the impact of electronic waste on the environment d
         <code>ng serve --o --ssl true</code>
  
 
-* Building packages:
-    01. To build an Android package:<br />
-        <code>ionic cordova build android</code>
 
 ## IBM Cloud Services <a name="IBM-Cloud-Services"></a>
   
