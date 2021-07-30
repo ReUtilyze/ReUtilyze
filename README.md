@@ -114,11 +114,12 @@ ReUtilyze will help minimize the impact of electronic waste on the environment d
 1. Amiya Padhi
 2. Vitthal Shinde
 3. Uma Shanker Pandey
-4. Manish Prasad
-5. Akash Chavan
-6. Annie Vaidya
-7. Rohit Nair
-8. Siddhesh Bhojane
+4. Arjun Rajan
+5. Manish Prasad
+6. Akash Chavan
+7. Annie Vaidya
+8. Rohit Nair
+9. Siddhesh Bhojane
 
  
 
