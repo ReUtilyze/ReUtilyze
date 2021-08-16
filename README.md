@@ -67,9 +67,9 @@ ReUtilyze will help minimize the impact of electronic waste on the environment d
 - Source : [Document](http://www3.weforum.org/docs/WEF_A_New_Circular_Vision_for_Electronics.pdf)
 
 ## Solution Architecture <a name="Solution-Architecture"></a>
-![picture alt](https://apactest.ingrammicro.com/ciscoltimages//Solution_Architecture.png)
+![picture alt](https://apactest.ingrammicro.com/ciscoltimages/Solution_Architecture.png)
 ## Project Roadmap <a name="Project-Roadmap"></a>
-![picture alt](https://cfcimages.blob.core.windows.net/cfcimages/roadmap.png)
+![picture alt](https://apactest.ingrammicro.com/ciscoltimages/roadmap.png)
 
 ## Tech Stack Details <a name="Tech-Stack-Details"></a>
 
