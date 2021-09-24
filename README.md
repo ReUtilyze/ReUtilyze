@@ -43,7 +43,7 @@ ReUtilyze will allow user to evaluate their old or waste electronic equipments, 
 ReUtilyze is built using .net Core 5, nosql DB (Mongo DB), Angular 11, Bootstrap 5, AWS Cloud Platform,  Azure Cloud Platform, IBM Cloud Platform, Visual Studio 2019 Community Version, GIT, Swagger.
 
 ## Demo Video <a name="Demo-Video"></a>
-[![Demo Video](https://apactest.ingrammicro.com/ciscoltimages/ReUtilyze.png)](https://youtu.be/UBLDtS63hu8 "DEMO VIDEO")
+[![Demo Video](https://apactest.ingrammicro.com/ciscoltimages/ReUtilyze.png)](https://www.youtube.com/watch?v=10xtEd1rHFU "DEMO VIDEO")
 
 
 ## Long Description <a name="Long-Description"></a>
